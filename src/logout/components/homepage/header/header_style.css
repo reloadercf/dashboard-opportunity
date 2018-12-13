@@ -5,7 +5,18 @@
 	background-position: center center;
 	background-size: cover;
 	display:flex;
-	flex-direction:row-reverse;	
+	flex-direction:column-reverse;	
 	flex-wrap: wrap;
 	align-items: flex-end;
+
+}
+.cover_alineacion{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+
+}
+.texto{
+	color:#ffffff;
+	font-size: 30px;
 }
