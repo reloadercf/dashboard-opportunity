@@ -1,0 +1,11 @@
+.cover{
+	background-image: url('../../../../assets/images/header/header.jpg');
+	background-repeat: no-repeat;
+	min-height: 50rem;
+	background-position: center center;
+	background-size: cover;
+	display:flex;
+	flex-direction:row-reverse;	
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
