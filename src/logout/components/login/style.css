@@ -1,0 +1,16 @@
+
+.Login{
+  background-image: url('../../../assets/images/login/fondo.jpg');
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.boton_alineacion{
+	position: relative;
+  top: -30%;
+  left: -10%;
+}
