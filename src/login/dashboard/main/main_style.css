@@ -1,7 +1,6 @@
 .dash_menu{
     display: flex;
     flex-direction: row;
-    margin-top: 15%;
     flex-wrap: wrap;
     justify-content: center;
 }

@@ -1,5 +1,12 @@
-.posision{
-    margin-top: 10%;
+.redaccion{
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 15%;
     justify-content: center;
+    align-items: center;
+}
+.inputs{
+    margin-bottom: 2em;
+    align-items: center;
 }
