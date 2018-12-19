@@ -1,0 +1,12 @@
+.patrocinador{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20%;
+    justify-content: center;
+    align-items: center;
+}
+.inputs_new_pa{
+    margin-bottom: 2em;
+    align-items: center;
+}
