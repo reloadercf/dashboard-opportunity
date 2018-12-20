@@ -8,12 +8,12 @@ import './header_style.css'
 export default () => {
   return (
     
-        <div class="cover">
-          <div class='cover_alineacion'>
+        <div className="cover">
+          <div className='cover_alineacion'>
             <img width='20%' height='5%' src={android}/>
             <img width='20%' height='5%' src={ios}/>
           </div>
-            <div class="texto">
+            <div className="texto">
               Descarga la app
             </div>
         </div>

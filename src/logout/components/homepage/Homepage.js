@@ -6,11 +6,12 @@ import Footer from "./footer/Footer"
 
 class Homepage extends Component {
   render() {
+    console.log(this.props)
     return (
       <div>
           <Header/>
-          <Nav/>
-          <Revista/>
+          <Nav  aumentar={this.props.aumentar}/>
+          <Revista />
           <Footer/>
       </div>
     );

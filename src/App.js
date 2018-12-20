@@ -1,19 +1,42 @@
 import React, { Component } from 'react';
 import './App.css'
-//import Homepage from "./logout/components/homepage/Homepage";
-//import Login from "./logout/components/login/Login";
-import Dashboard from "./login/dashboard/Dashboard";
+import RoutesLogin from './login/RoutesLogin';
+import RoutesLogout from './logout/RoutesLogout';
+import { connect } from 'react-redux';
+const login=false
 
 class App extends Component {
+
+  componentDidMount(){
+    
+  }
+
   render() {
+    console.log(this.props.numero)
     return (
       <div>
-      {/* <Homepage/> */}
-        {/* <Login/> */}
-        <Dashboard/>
+        {
+          login? <RoutesLogin/>:<RoutesLogout  aumentar={this.props.aumentar}/>
+        }
       </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+   numero:state.reducerPrueba
+})
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    aumentar: () => {
+      dispatch({
+        type:'AUMENTAR_REDUCER_PRUEBA'
+      })
+ 
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)
+
