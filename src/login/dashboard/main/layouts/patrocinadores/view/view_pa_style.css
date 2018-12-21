@@ -1,11 +1,7 @@
-.patrocinador{
+.vista_patrocinio{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-}
-.inputs_new_pa{
-    margin-bottom: 2em;
     align-items: center;
 }
