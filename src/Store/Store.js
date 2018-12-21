@@ -1,6 +1,6 @@
-import {createStore, combineReducers, applyMiddleware} from 'redux'
-import Constantes from './Constantes'
-
+import {createStore, combineReducers} from 'redux'
+// import Constantes from './Constantes'
+//quite tambien  applyMiddleware de redux
 
 const reducerPrueba =(state=[0], action)=>{
   switch (action.type) {

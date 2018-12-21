@@ -10,8 +10,8 @@ export default () => {
     
         <div className="cover">
           <div className='cover_alineacion'>
-            <img width='20%' height='5%' src={android}/>
-            <img width='20%' height='5%' src={ios}/>
+            <img width='20%' height='5%' alt='Descarga' src={android}/>
+            <img width='20%' height='5%' alt='descarga' src={ios}/>
           </div>
             <div className="texto">
               Descarga la app
