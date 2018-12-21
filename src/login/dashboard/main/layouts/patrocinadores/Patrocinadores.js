@@ -16,19 +16,18 @@ export default class Patrocinadores extends Component {
     return (
       <div>
         <Sider
-          collapsible
-          collapsed={this.state.collapsed}
-          onCollapse={this.onCollapse}
+          
+          style={{backgroundColor:"#000000",background:"#000000",borderColor:"#000000"}}
         >
-          <div className="logo" />
-          <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
+          <div className="logo"  />
+          <Menu theme="dark" style={{backgroundColor:"#000000",background:"#000000",borderColor:"#000000"}} defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="1">
               <Icon type="pie-chart" />
-              <span>Mis Categorias</span>
+              <span>Patrocinadores</span>
             </Menu.Item>
             <Menu.Item key="2">
               <Icon type="desktop" />
-              <span>Crear</span>
+              <span>Nuevo Patrocinador</span>
             </Menu.Item>
           </Menu>
         </Sider>
