@@ -10,6 +10,7 @@ import Papeleta from "./dashboard/main/layouts/papeleta/Papeleta";
 import Viewpatrocinador from './dashboard/main/layouts/patrocinadores/view/Viewpatrocinador'
 import New from './dashboard/main/layouts/patrocinadores/new/New'
 
+
 class RoutesLogin extends Component {
     render() {
         return (
