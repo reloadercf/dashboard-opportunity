@@ -10,12 +10,17 @@ export const Revista= () => {
   return (
         <Content style={{ padding: '0 50px', marginTop: 64 }} >
             <div className="ContentDivMapa">
-              <Row>
-                <Col xs={2} sm={4} md={6} lg={8} xl={10}>Col</Col>
-                <Col xs={20} sm={16} md={12} lg={8} xl={4}>Col</Col>
-                <Col xs={2} sm={4} md={6} lg={8} xl={10}>Col</Col>
+              <Row gutter={16} type="flex" justify="center" align="center" >
+                <Col xs={24} sm={12} md={11} lg={11} xl={11}>
+                                
+                </Col>
+                <Col xs={24} sm={12} md={11} lg={11} xl={11}>
+                  <div>
+
+                  </div>
+                </Col>
               </Row>
-              </div>
+            </div>
         </Content>
   )
 }

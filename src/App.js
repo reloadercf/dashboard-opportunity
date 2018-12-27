@@ -18,7 +18,7 @@ class App extends Component {
         {
           login? 
           <div>
-            <Dashboard/>
+            <Dashboard/> 
           </div>:
           
           <RoutesLogout  aumentar={this.props.aumentar}/>
