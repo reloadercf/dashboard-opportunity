@@ -7,6 +7,9 @@ import Borrador from "./dashboard/main/layouts/borrador/Borrador";
 import Patrocinadores from "./dashboard/main/layouts/patrocinadores/Patrocinadores";
 import Categorias from "./dashboard/main/layouts/categorias/Categorias";
 import Papeleta from "./dashboard/main/layouts/papeleta/Papeleta";
+import Viewpatrocinador from './dashboard/main/layouts/patrocinadores/view/Viewpatrocinador'
+import New from './dashboard/main/layouts/patrocinadores/new/New'
+
 
 class RoutesLogin extends Component {
     render() {
@@ -19,6 +22,8 @@ class RoutesLogin extends Component {
                 <Route exact path="/Patrocinadores"  render={props =>(<Patrocinadores {...props}  />)}/>
                 <Route exact path="/Categorias"  render={props =>(<Categorias {...props}  />)}/>
                 <Route exact path="/Papeleta"  render={props =>(<Papeleta {...props}  />)}/>
+                <Route exact path="/Verpatrocinador"  render={props =>(<Viewpatrocinador {...props}  />)}/>
+                <Route exact path="/Registrarpatrocinador"  render={props =>(<New {...props}  />)}/>
             </Switch>
         );
     }
