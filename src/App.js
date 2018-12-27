@@ -16,7 +16,12 @@ class App extends Component {
     return (
       <div>
         {
-          login? <div><Dashboard/></div>:<RoutesLogout  aumentar={this.props.aumentar}/>
+          login? 
+          <div>
+            <Dashboard/>
+          </div>:
+          
+          <RoutesLogout  aumentar={this.props.aumentar}/>
         }
       </div>
     );

@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
+import { Layout} from 'antd';
+
 import Header from "./header/Header";
-import Nav from "./nav/Nav"
-import Revista from "./revista/Revista"
+import {Revista} from "./revista/Revista"
 import Footer from "./footer/Footer"
+import { Nav } from './nav/Nav';
+
 
 class Homepage extends Component {
   render() {
     console.log(this.props)
     return (
-      <div>
+      <Layout>
           <Header/>
-          <Nav  aumentar={this.props.aumentar}/>
-          <Revista />
+          <Nav/>
+          <Revista/>
           <Footer/>
-      </div>
+      </Layout>
+         
+     
     );
   }
 }

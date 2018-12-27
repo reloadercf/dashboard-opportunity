@@ -1,20 +1,23 @@
 import React from 'react'
-import {Menu} from 'antd'
+import { Layout, Menu,  } from 'antd';
 import './style.css'
+const { Header} = Layout;
 
-export default (props) => {
+export const Nav = ({props})=> {
   return (
-    <div>
+    <Header style={{ position: 'fixed', zIndex: 1, width: '100%'}}>
+      <div className="logo" />
       <Menu
         theme="dark"
         mode="horizontal"
         defaultSelectedKeys={['2']}
-        style={{ lineHeight: '64px', backgroundColor:'#000000',color:'#ffffff'}}
+        style={{ lineHeight: '64px' }}
       >
-        <Menu.Item key="1" >Quiero ser MXOpportunity</Menu.Item>
-        <Menu.Item key="2"> Como negociar de forma internacional</Menu.Item>
-        <Menu.Item key="3" onClick={()=>{props.aumentar()}}> Aumentar</Menu.Item>
+        <Menu.Item key="1">nav 1</Menu.Item>
+        <Menu.Item key="2">nav 2</Menu.Item>
+        <Menu.Item key="3">nav 3</Menu.Item>
       </Menu>
-    </div>
+    </Header>
   )
 }
+
