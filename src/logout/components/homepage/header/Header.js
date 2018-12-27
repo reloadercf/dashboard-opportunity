@@ -10,7 +10,6 @@ export default () => {
         <div className="cover">
            <img className="cover_cover_alineacion_mx" alt='Descarga' src={mxopportunity}/>
            <div className='cover_alineacion'>
-          
             <div className="texto">
               Descarga la app
             </div>

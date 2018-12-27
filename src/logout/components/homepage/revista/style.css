@@ -1,3 +1,103 @@
 .ContentDivMapa{
+    margin-bottom: 3em;
+}
+.ContentDivMapaDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    letter-spacing: 1px;
+}
+.ContentDivMapaDiv img
+{
+    width: 110%;
+   
+}
+
+.ContentDivMapaDiv span
+{
+    font-size: 40px;
+    font-weight: bold;
 
 }
+.ContentDivMapaDiv p
+{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 200
+
+}
+
+.ContentDivMapaDiv a 
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffbd39;
+    padding: 10px;
+    border-radius: 5%;
+    text-decoration: none;
+ 
+}
+.ContentDivMapaDiv a:hover
+{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #ff6f3c;
+ 
+}
+
+
+  /* Para 480px */  
+  @media only screen and (max-width: 500px) and (min-width: 341px) 
+  {
+    .ContentDivMapaDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 12em;
+        letter-spacing: 1px;
+    }
+    .ContentDivMapaDiv img
+    {
+        width: 120%;
+    }
+    
+    .ContentDivMapaDiv span
+    {
+        font-size: 25px;
+        font-weight: bold;
+    
+    }
+    .ContentDivMapaDiv p
+    {
+        font-size: 25px;
+        text-align: center;
+        font-weight: 200
+    
+    }
+    
+    .ContentDivMapaDiv a 
+    {
+        font-size: 25px;
+        font-weight: bold;
+        color: #000000;
+        background-color: #ffbd39;
+        padding: 10px;
+        border-radius: 5%;
+        text-decoration: none;
+     
+    }
+    .ContentDivMapaDiv a:hover
+    {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: #ff6f3c;
+     
+    }
+   
+  
+  
+  }  
