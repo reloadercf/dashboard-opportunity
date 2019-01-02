@@ -1,7 +1,152 @@
-#components-layout-demo-fixed .logo {
-    width: 120px;
-    height: 31px;
-    background: rgba(101, 255, 165, 0.2);
-    margin: 16px 24px 16px 0;
-    float: left;
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background: #000000;
+  color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 10px 100px;
+  z-index: 1;
+  box-sizing: border-box;
+  transition: .5s;
+}
+
+nav .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+nav .logo img{
+  height: 80px;
+  transition: .5s;
+}
+
+.menu-icon{
+  display: none
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  transition: .5s;
+}
+
+nav.black{
+  background: rgba(0, 0, 0, .1);
+}
+nav.black .logo img{
+  height: 70px;
+}
+
+nav.black nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav ul li{
+  list-style: none;
+}
+
+nav ul li a{
+  line-height: 80px;
+  color: #ffffff;
+  padding: 5px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .5s;
+  font-size: 20px;
+  border-radius: 2%;
+}
+
+nav ul li a:active,
+nav ul li a:hover{
+  color: #ffffff;
+  background: #ff6f3c;
+}
+
+
+
+@media only screen and (max-width:767px){
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000000;
+    color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    z-index: 1;
+    box-sizing: border-box;
+    transition: .5s;
+ 
+  }
+  nav .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  
+  }
+  nav .logo img{
+    height: 70px;
+    transition: .5s;
+  }
+
+  .menu-icon{
+    display: inline;
+  }
+  nav ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+    width: 100%;
+    display: none;
+   
+  }
+  
+  nav.black .logo img{
+    height: 70px;
+  }
+  
+
+  nav.black{
+    background: #000000;
+  }
+  nav ul li{
+    list-style: none;
+  }
+  
+  nav ul li a{
+    line-height: 40px;
+    padding: 5px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    font-size: 14px;
+    border-radius: 10px;
+
+  }
+  
+  nav ul li a:active,
+  nav ul li a:hover{
+    color: #ffffff;
+    background: #ff6f3c;
+  }
+  
+  
   }

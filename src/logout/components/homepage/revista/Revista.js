@@ -3,11 +3,12 @@ import { Layout } from 'antd'
 import './style.css'
 import { Row, Col } from 'antd';
 import mapa from '../../../../assets/images/world-map.png'
+import { ArticulosList } from '../articulos/ArticulosList';
 const {
     Content,
   } = Layout;
 
-export const Revista= () => {
+export const Revista= (props) => {
   return (
   <Content style={{ padding: '0 50px', marginTop: 64 }} >
     <div className="ContentDivMapa">
@@ -26,8 +27,12 @@ export const Revista= () => {
         </Col>
       </Row>
     </div>
+    <div className="divConviccion">
+        <p> -Nuestra Convicción-</p>
+        <span>"Comprometidos con la deteccion de oportunidades para las empresas en crecimiento"</span>
+    </div>
     <div>
-      
+      <ArticulosList noticias={props.noticias}/>
     </div>
   </Content>
   )

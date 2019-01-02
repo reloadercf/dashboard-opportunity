@@ -1,23 +1,22 @@
 import React from 'react'
-import { Layout, Menu,  } from 'antd';
 import './style.css'
-const { Header} = Layout;
+import logo from '../../../../assets/images/logotipos/iconomx.png'
 
 export const Nav = ({props})=> {
   return (
-    <Header style={{ position: 'fixed', zIndex: 1, width: '100%'}}>
-      <div className="logo" />
-      <Menu
-        theme="dark"
-        mode="horizontal"
-        defaultSelectedKeys={['2']}
-        style={{ lineHeight: '64px' }}
-      >
-        <Menu.Item key="1">nav 1</Menu.Item>
-        <Menu.Item key="2">nav 2</Menu.Item>
-        <Menu.Item key="3">nav 3</Menu.Item>
-      </Menu>
-    </Header>
+      <nav id="navBar" className="navBar">
+            <div className="logo">
+              <img src={logo} alt="logo"/>
+              <span className="menu-icon" >Ver Menu</span>
+            </div>
+            
+            <ul>
+              <li><a href='www.google.com'>¿Quiero ser MXOpportunitty?</a></li>
+              <li><a href='www.google.com'>Unete</a></li>
+              <li><a href='www.google.com'>Unete</a></li>
+            </ul>    
+      </nav>  
+   
   )
 }
 

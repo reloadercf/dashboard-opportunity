@@ -1,0 +1,336 @@
+  .nav-text {
+    font-size: 16px;
+  }
+  .container-card {
+    position: relative;
+    height: auto;
+    text-align: center;
+  }
+
+  .container-card img {
+    width: auto;
+    height: 100px;
+    display: block;
+  }
+
+  .card-title {
+    color: '#393e46';
+    font-size: 12px;
+    line-height: 0.9;
+  }
+
+  .detail-img1 {
+    text-align: center;
+  }
+
+  .detail-img1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container_detail_title{
+    width: 100%;
+    height:100px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .detail_title{
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 3px;
+    background: #838689;
+    color:#f6f6f6;
+    width: 100%; 
+    transition: 1s; 
+  }
+
+  .detail_title:hover{
+    font-size: 25 px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 3px;
+    background: #303841;
+    color:#f6f6f6;
+    width: 80%; 
+    
+  }
+
+  .detail_subtitle{
+    font-size: 25px;
+  }
+
+ /* estilos */
+
+  .detail_autor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 1em;
+  }
+  .detail_autor span{
+    margin-right: 3em;
+  }
+
+  .detail_descripcion_uno{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-bottom: 2em;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .detail-img2  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ 
+  .detail-img2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #222831;
+  }
+ 
+  .detail_descripcion_dos p{
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-bottom: 2em;
+    font-family: 'Lato', sans-serif;
+  }
+
+
+  .info-container-card {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+  }
+
+  .info-container-card span {
+    font-size: 40px;
+    font-weight: 600;
+    padding: 5px;
+    border-right: 8px 
+  }
+
+
+  .iconos_detail ul {
+    list-style: none;
+    margin: 0.5em 0 0;
+    padding: 0;
+  }
+
+  .iconos_detail ul li {
+    display: inline-block;
+    margin-left: 1em;
+    line-height: 1em;
+  }
+
+  .iconos_detail ul li:first-child {
+    margin-left: 0;
+  }
+
+  .iconos_detail ul li .icon {
+    vertical-align: bottom;
+  }
+
+  .iconos_detail ul li span:nth-of-type(2) {
+    margin-left: 0.5em;
+    font-size: 0.8em;
+    font-weight: 300;
+    vertical-align: middle;
+    color: #838689;
+  }
+
+  .ContentDiv{
+    height: auto;
+    margin-top: 60px;
+  }
+
+  .ShowIcon{
+    display: none;
+  }
+
+
+  @media only screen and (max-width: 980px) and (min-width: 821px) {}
+
+  /* Para 800px */
+
+  @media only screen and (max-width: 820px) and (min-width: 621px) {}
+
+  /* Para 600px */
+
+  @media only screen and (max-width: 620px) and (min-width: 501px) {
+    
+  }
+
+  /* Para 480px */
+
+  @media only screen and (max-width: 500px) and (min-width: 341px) {
+   
+
+  
+    .detail-img1 img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .container_detail_title{
+      width: 100%;
+      height:auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .detail_title{
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 3px;
+      background: #838689;
+      color:#f6f6f6;
+      width: 100%; 
+      transition: 1s; 
+    }
+  
+    .detail_title:hover{
+      font-size: 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px;
+      background: #303841;
+      color:#f6f6f6;
+      width: 90%; 
+      
+    }
+  
+    .detail_subtitle{
+      font-size: 16px;
+      text-align: justify;
+      font-weight: bold;
+    
+    }
+  
+   /* estilos */
+    .detail_autor{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 12px;
+      margin-top: 1em;
+    }
+    .detail_autor span{
+        font-weight: 600;
+    }
+  
+    .detail_descripcion_uno{
+      font-size: 14px;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      text-align: justify;
+      margin-bottom: 2em;
+      font-weight: 200;
+      font-family: 'Lato', sans-serif;
+    }
+  
+    .detail-img2  {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+   
+    .detail-img2 img {
+      width: 100%;
+      height: auto;
+      border-radius: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #222831;
+    }
+   
+    .detail_descripcion_dos p{
+      font-size: 14px;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      text-align: justify;
+      margin-bottom: 2em;
+      font-weight: 200;
+      font-family: 'Lato', sans-serif;
+    }
+  
+  
+    .info-container-card {
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+      align-items: center;
+    }
+  
+    .info-container-card span {
+      font-size: 40px;
+      font-weight: 600;
+      padding: 5px;
+      border-right: 8px 
+    }
+  
+  
+    .iconos_detail ul {
+      list-style: none;
+      margin: 0.3em 0 0;
+      padding: 0;
+    }
+  
+    .iconos_detail ul li {
+      display: inline-block;
+      margin-left: 0.5em;
+      line-height: 0.5em;
+    }
+  
+    .iconos_detail ul li:first-child {
+      margin-left: 0;
+    }
+  
+    .iconos_detail ul li .icon {
+      vertical-align: bottom;
+    }
+  
+    .iconos_detail ul li span:nth-of-type(2) {
+      margin-left: 0.5em;
+      font-size: 0.8em;
+      font-weight: 300;
+      vertical-align: middle;
+      color: #838689;
+    }
+  
+    .ContentDiv{
+      height: auto;
+      margin-top: 60px;
+    }
+    .ShowIcon{
+      display: block;
+    }
+
+   
+  }
+
+  /* Para 320px */
+
+  @media only screen and (max-width: 340px) and (min-width: 5px) {}
