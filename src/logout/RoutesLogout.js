@@ -4,6 +4,8 @@ import Homepage from './components/homepage/Homepage';
 import Login from '../logout/components/login/Login'
 import { Detail } from './components/CardDetail/Detail';
 import  '../logout/components/CardDetail/cardDetail.css'
+import { Capacitacion } from './Capacitacion/Capacitacion';
+import { Consultoria } from './Consultoria/Consultoria';
 
 class RoutesLogout extends Component {
 
@@ -17,7 +19,6 @@ class RoutesLogout extends Component {
           }
         }
         
-     
        }
     render() {
         let{noticias}=this.props       
@@ -27,9 +28,13 @@ class RoutesLogout extends Component {
                 <Route exact path="/"  render={props =>(<Homepage {...props}  aumentar={this.props.aumentar} />)}/>
                 <Route exact path="/detail/:slug_noticia" render={props =>(<Detail {...props} noticias={noticias}  />)}/>    
                 <Route exact path="/entrar" render={props =>(<Login {...props} />)}/>
+                <Route exact path="/capacitacion" render={props =>(<Capacitacion  />)}/>
+                <Route exact path="/consultoria" render={props =>(<Consultoria  />)}/>
+                
             </Switch>
         );
     }
+
 }
 
 export default RoutesLogout;

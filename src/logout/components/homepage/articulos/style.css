@@ -29,11 +29,13 @@ font-family: 'Merriweather', serif; */
   }
   
   .recipe-card .div-img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    height: 350px;
+    height: 300px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     cursor: pointer;
   }
   
@@ -72,6 +74,7 @@ font-family: 'Merriweather', serif; */
   
   .recipe-card article {
     padding: 0em 4em;
+   
   }
   
   .recipe-card article ul {
@@ -199,13 +202,16 @@ font-family: 'Merriweather', serif; */
     font-size: 3em;
   } 
   .divConviccion span {
-    font-size: 1em;
+    font-size: 2em;
   } 
 
   .ShowIcon{
     display: none;
   }
   
+  .ShowAutorInfo{
+    display: none;
+  }
   
  
   
@@ -299,18 +305,19 @@ font-family: 'Merriweather', serif; */
     }
     .recipe-card article h2 {
       font-family: 'Open Sans', sans-serif;
-      letter-spacing: 2px;
-      font-weight: bold;
-      font-size: 1.5em;
+      letter-spacing: 1px;
+      font-weight: 600;
+      font-size: 1.2em;
       text-align: center;
       color: #222222;
     }
     .recipe-card article h3 {
       font-family: 'Open Sans', sans-serif;
-      font-size: 1em;
-      font-weight: 600;
+      font-size:.9em;
+      font-weight: 300;
       color: #454748;
       margin-top: 1em;
+      text-align: justify;
     }
     .recipe-card article hr{
       border-top: 1px double #63666b;
@@ -384,6 +391,18 @@ font-family: 'Merriweather', serif; */
     }
     .ShowInfoCard{
       display: none;
+    }
+    .ShowAutorInfo{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .ShowAutorInfo span{
+    text-align: center;
+    font-size: .8em;
+    font-weight: 600;
+    margin-top: 10px;
     }
       
     

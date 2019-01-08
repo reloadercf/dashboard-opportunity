@@ -12,8 +12,8 @@ export const Nav = ({props})=> {
             
             <ul>
               <li><a href='www.google.com'>¿Quiero ser MXOpportunitty?</a></li>
-              <li><a href='www.google.com'>Unete</a></li>
-              <li><a href='www.google.com'>Unete</a></li>
+              <li><a href='www.google.com'>CONSULTORIA</a></li>
+              <li><a href='www.google.com'>CAPACITACIÓN</a></li>
             </ul>    
       </nav>  
    

@@ -7,7 +7,7 @@ const {
   } = Layout;
 class DetailCard extends Component {
     render() {
-        let {publicacion} = this.props
+        let {publicacion} = this.props 
         return (
             <Content style={{ marginTop: 64 }}>
                 <Row type="flex" justify="center" align="middle" >
@@ -86,6 +86,20 @@ class DetailCard extends Component {
                         <img src={publicacion.imagen_uno} alt="" />
                         <div className="detail_descripcion_uno" >
                             <p style={{ marginTop: "1em" }}> {publicacion.descripcion_dos}</p>
+                        </div>
+                    </Col>
+                </Row>
+
+                <Row type="flex" justify="center" align="middle">
+                    <Col lg={8} md={8} sm={12} xs={24}>
+                        <div className="SectionPublicidad">
+                                asdasd
+                        </div>
+                    </Col>
+
+                    <Col lg={8} md={8} sm={12} xs={24}>
+                        <div className="SectionPublicidad">
+                            sasdsdad                                
                         </div>
                     </Col>
                 </Row>

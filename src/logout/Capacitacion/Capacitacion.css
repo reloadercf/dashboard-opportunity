@@ -1,0 +1,281 @@
+.Capacitacion{
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+.Capacitacion img{
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    width: 30%;
+    z-index: 1;
+}
+
+.HeaderCapacitacion{
+    position: absolute;
+    height: 90vh; 
+    width: 80%;
+    background: #3f72af;
+    -moz-border-radius: 0 100% 0 0;
+    -webkit-border-radius: 0 100% 0 0;
+    border-radius: 0 0 100% 0;
+    z-index: 1;
+    color: #ffff;
+}
+
+.HeaderCapacitacionTitulo{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20%;
+    left: 10%;
+    color: #ffffff;
+    width: 50%;
+}
+.HeaderCapacitacionTitulo span{
+    letter-spacing: 5px;
+    font-size: 18px;
+    font-weight: 200;
+}
+.HeaderCapacitacionTitulo h1{
+    color: #ffffff;
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 2em;
+}
+.HeaderCapacitacionTitulo p{
+    text-align: justify;
+    font-size: 25px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-weight: 250;
+}
+
+.HeaderCapacitacionTitulo a 
+{
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 40%;
+    transition: .5s;
+}
+.HeaderCapacitacionTitulo a:hover
+{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #555352;
+}
+
+
+.divRedesSociales{
+    position: relative;
+    top: 30%;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 3px solid rgba(255, 255, 255, 0.5);
+    width:3%;
+    
+}
+
+.HeaderConsultoriaDos{
+    position: absolute;
+    top: 0%;
+    height: 90vh; 
+    width: 100%;
+    background: #112d4e;
+    -moz-border-radius: 0 100% 0 0;
+    -webkit-border-radius: 0 100% 0 0;
+    border-radius: 0 0 100% 0;
+    z-index: 0;
+}
+
+.ConsultoriaInfoUno{
+    height: 35vh;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.ConsultoriaInfoDos{
+   padding: 2em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 35vh;
+}
+
+
+.ConsultoriaInfoDos h3{
+    font-size: 30px;
+    letter-spacing:3px;
+    text-align: center;
+ }
+
+ .ConsultoriaInfoDos p{
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: justify;
+    line-height:1.5;
+ }
+
+.dtl04 {
+    display: flex;
+    justify-content: center;
+    height: 35vh;
+    width: 100%;
+    position: relative;
+
+}
+.dtl04 img {
+    position: relative;
+    width: 80%;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.dtl04 .dtl {
+    position: absolute;
+    background: #333;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    padding: 0 15px 0 15px;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+    overflow: auto;
+    visibility: hidden;
+    -webkit-transition: all 0.3s 0.15s;
+    -moz-transition: all 0.3s 0.15s;
+    -o-transition: all 0.3s 0.15s;
+    transition: all 0.3s 0.15s;
+}
+.dtl04 .dtl h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+   
+}
+.dtl04 .dtl p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    color: #9d9c9c;
+    text-indent: 10px;
+    text-align: justify;
+}
+.dtl04 .dtl a {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #333;
+    float: right;
+    font-size: 13px;
+    padding: 2px 5px;
+    text-align: center;
+    text-decoration: none;
+}
+.dtl04 .dtl a:hover {
+    background: #e6e6e6;
+    border: 1px solid #adadad;
+}
+.dtl04:hover img {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+}
+.dtl04:hover .dtl {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.RowInfoConsultoriaInnovadora{
+    margin-top: 5em;
+}
+
+
+.dtl13 {
+    width: 100%;
+    position: relative;
+    -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.dtl13 img {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.dtl13 .dtl {
+    background: #333;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    padding: 0 15px;
+    visibility: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.dtl13 .dtl h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+.dtl13 .dtl p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    color: #9d9c9c;
+    text-indent: 10px;
+}
+.dtl13 .dtl a {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #333;
+    float: right;
+    font-size: 13px;
+    padding: 2px 5px;
+    text-align: center;
+    text-decoration: none;
+}
+.dtl13 .dtl a:hover {
+    background: #e6e6e6;
+    border: 1px solid #adadad;
+}
+.dtl13:hover .dtl {
+    visibility: visible;
+    opacity: 1;
+    left: 25px;
+    top: 25px;
+}
