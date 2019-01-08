@@ -4,6 +4,7 @@ import Header from "./header/Header";
 import {Revista} from "./revista/Revista"
 import Footer from "./footer/Footer"
 import { Nav } from './nav/Nav';
+import { connect } from 'react-redux';
 
 
 class Homepage extends Component {
@@ -95,21 +96,14 @@ class Homepage extends Component {
     }
   }
  
-  //  componentDidMount(){
-  //   window.onscroll = function() {myFunction()};
-  //   function myFunction() {
-  //     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-  //       document.getElementById("navBar").className = "";
-  //     } else {
-  //       document.getElementById("navBar").className = "black";
-  //     }
-  //   }
-  //  }
+   componentDidMount(){
+     this.props.aumentar()
+   }
 
 
 
   render() {
-    console.log(this.props)
+    console.log(this.props.numero)
     return (
       <Layout>
           <Header/>
@@ -121,4 +115,20 @@ class Homepage extends Component {
   }
 }
 
-export default Homepage;
+const mapStateToProps = (state) => ({
+   numero:state.reducerPrueba
+})
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    aumentar: () => {
+      dispatch({
+        type:'AUMENTAR_REDUCER_PRUEBA'
+      })
+ 
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Homepage)
+
