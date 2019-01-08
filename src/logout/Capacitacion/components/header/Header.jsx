@@ -21,7 +21,7 @@ export default () => {
           <FontAwesomeIcon icon={faTwitterSquare} size="3x" style={{ color: "#fffff" }} />
         </div>
       </div>
-      <div className="HeaderConsultoriaDos" >
+      <div className="HeaderCapacitacionDos" >
       </div>
      
     </div>

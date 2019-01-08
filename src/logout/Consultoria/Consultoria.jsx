@@ -1,11 +1,11 @@
 import React from 'react'
 import {Row, Col, Layout} from 'antd';
-import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import { Nav } from '../components/homepage/nav/Nav';
 import Header from './components/header/Header';
 import Footer from '../components/homepage/footer/Footer';
+import consultoria from '../../assets/images/consultoria.svg'
 import './Consultoria.css'
 
 
@@ -71,8 +71,31 @@ export const Consultoria = ()=> {
               </Row>
 
               <Row type="flex" justify="center" align="middle">
-                  <Col lg={18} md={18} sm={20} xs={24} >
+                  <Col lg={24} md={24} sm={24} xs={24} >
                       <div className="RowInfoConsultoriaInnovadora">
+                            <div>
+                                <h3>MxOpportunity</h3>
+                                <img src={consultoria} alt="Consultoria"/>
+                            </div> 
+
+                            <div className="RowInfoConsultoriaInnovadoraDiv">
+                              <div>
+                                  <span>Oportunidades</span>
+                                  <p>
+                                      MX Opportunity ayuda a la elaboración de proyectos
+                                      de emprendimiento internacional para potenciar.
+                                </p>
+                              </div>
+                              <div>
+                                  <span>Oportunidades</span>
+                                  <p>
+                                      MX Opportunity ayuda a la elaboración de proyectos
+                                      de emprendimiento internacional para potenciar.
+                                </p>
+                              </div>
+                                
+                               
+                            </div> 
 
                       </div>
                   </Col>
