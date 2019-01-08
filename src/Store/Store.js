@@ -1,25 +1,27 @@
-import {createStore, combineReducers} from 'redux'
-// import Constantes from './Constantes'
-//quite tambien  applyMiddleware de redux
+import {createStore, combineReducers,applyMiddleware} from 'redux'
+import createSagaMiddleware from 'redux-saga';
+import CONSTANTES from './Constantes';
+import funcionPrimaria from './Sagas/Sagas';
 
-const reducerPrueba =(state=[0], action)=>{
+const reducerArticulos = (state = {}, action) => {
   switch (action.type) {
-    case 'AUMENTAR_REDUCER_PRUEBA':
-      return [...state, "hola"]
+    case CONSTANTES.GetArticulosDestacados:
+      return { ...state, articulosDestacados: action.articulos };
     default:
-      return state
+      return state;
   }
-}
+};
 
 
+const sagaMiddleware = createSagaMiddleware();
 
 const reducers=combineReducers({
-  reducerPrueba,
- 
+  reducerArticulos
 })
 
-const store =createStore(reducers)
+const store =createStore(reducers, applyMiddleware(sagaMiddleware))
 
+sagaMiddleware.run(funcionPrimaria);
 export default store
 
 

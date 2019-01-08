@@ -5,6 +5,7 @@ import {Revista} from "./revista/Revista"
 import Footer from "./footer/Footer"
 import { Nav } from './nav/Nav';
 import { connect } from 'react-redux';
+import {actionGetArticulosDestacados} from '../../../Store/Acciones'
 
 
 class Homepage extends Component {
@@ -97,13 +98,12 @@ class Homepage extends Component {
   }
  
    componentDidMount(){
-     this.props.aumentar()
+    this.props.getArticulosDestacados();
    }
 
 
-
   render() {
-    console.log(this.props.numero)
+    
     return (
       <Layout>
           <Header/>
@@ -116,17 +116,14 @@ class Homepage extends Component {
 }
 
 const mapStateToProps = (state) => ({
-   numero:state.reducerPrueba
+  destacados: state.reducerArticulos,
 })
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    aumentar: () => {
-      dispatch({
-        type:'AUMENTAR_REDUCER_PRUEBA'
-      })
- 
-    }
+    getArticulosDestacados: () => {
+      dispatch(actionGetArticulosDestacados());
+    },
   }
 }
 
