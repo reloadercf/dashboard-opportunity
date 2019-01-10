@@ -163,10 +163,34 @@
     display: none;
   }
   .SectionPublicidad{
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2em;
+  
   }
+  .SectionPublicidad img{
+    width: 100%;
+  }
+  .SectionPublicidad a{
+    background: #222831;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    padding: .4em;
+    border-radius: 10px;
+  }
+
+  .SectionPublicidad span{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 1em;
+    border-radius: 10px;
+  
+  }
+
 
 
   @media only screen and (max-width: 980px) and (min-width: 821px) {}

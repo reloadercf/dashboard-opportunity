@@ -1,8 +1,8 @@
 import React from 'react'
-import Zoom from 'react-reveal/Zoom';
-import Flip from 'react-reveal/Flip';
+//import Zoom from 'react-reveal/Zoom';
+//import Flip from 'react-reveal/Flip';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitterSquare, faFacebookSquare, faWhatsappSquare,  } from '@fortawesome/free-brands-svg-icons'
+import { faTwitterSquare, faFacebookSquare  } from '@fortawesome/free-brands-svg-icons'
 import '../../Consultoria.css'
 
 export default () => {
@@ -13,7 +13,7 @@ export default () => {
           <span>-MxOpportunity</span>
           <h1>CONSULTORIA</h1>
           <p>La primera consultora en México en contar con una revista de aplicación móvil en el mercado que mueve moda y tendencias de oportunidad.</p>
-          <a href=""><FontAwesomeIcon icon="coffee" />Comenzar</a>
+          <a href="https://www.google.com/">Comenzar</a>
         </div>
 
         <div className="divRedesSociales">
@@ -23,7 +23,7 @@ export default () => {
       </div>
       <div className="HeaderConsultoriaDos" >
       </div>
-      <img src="https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+      <img src="https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Header" />
     </div>
   )
 }

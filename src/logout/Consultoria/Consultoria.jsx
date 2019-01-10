@@ -2,10 +2,9 @@ import React from 'react'
 import {Row, Col, Layout} from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
-
 import Header from './components/header/Header';
 import Footer from '../components/homepage/footer/Footer';
-import consultoria from '../../assets/images/consultoria.svg'
+import consultoria from '../../assets/images/consultoria.png'
 import './Consultoria.css'
 import Nav from '../components/homepage/nav/Nav';
 
