@@ -5,31 +5,31 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitterSquare, faFacebookSquare, faWhatsappSquare } from '@fortawesome/free-brands-svg-icons'
 import './style.css'
 
-export const ArticuloCard = ({slug, title, subtitle, imagen_uno, descripcion_uno})=> {
+export const ArticuloCard = ({slug, titulo, categoria, imagen_destacada_uno, fecha_fin})=> {
   return (
     <Row className="recipe-card">
     <Col md={10} sm={24} xs={24}>
         <Link to={`/detail/${slug}`}> 
             <div className="div-img hidden">
-                <img className="img" src={imagen_uno} alt="Chai Oatmeal"/>
+                <img className="img" src={imagen_destacada_uno} alt="Chai Oatmeal"/>
             </div>
         </Link>
     </Col>
     <Col md={14} sm={24} xs={24}>
         <article>
             <div className="div-category">
-                <span>MUSICA</span>
-                <span>27 MAYO 2018</span>
+                <span>{categoria}</span>
+                <span>{fecha_fin}</span>
             </div>
             <Link to={`/detail/${slug}`}> 
-                <h2>{title}</h2>
+                <h2>{titulo}</h2>
             </Link>
-            <h3>{subtitle}</h3>
+            {/* <h3>{subtitle}</h3> */}
                   <div className="ShowInfoCard">
                       <hr />
-                      <p>
+                      {/* <p>
                           {descripcion_uno}
-                      </p>
+                      </p> */}
                       <div style={{display:"flex", justifyContent:"space-around", alignItems:"center"}}> 
                           <span>Por: ROMANO RODRIGUEZ FERNANDEZ</span>
                           <ul>

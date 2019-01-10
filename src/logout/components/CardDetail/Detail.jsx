@@ -1,48 +1,32 @@
 import React, {Component} from 'react'
-import {Row, Col, Layout} from 'antd'
+import { Layout} from 'antd'
 import DetailCard from './DetailCard';
-import { Nav } from '../homepage/nav/Nav';
+import Nav from '../homepage/nav/Nav';
 import Footer from '../homepage/footer/Footer';
 import Header from '../homepage/header/Header';
-//import {CarrouselDos} from './CarrouselDos';
-//import CardsListDos from '../cardsdos/CardsListDos';
+import { connect } from 'react-redux';
+import { actionGetArticuloSlug, actionGetArticuloDetail } from '../../../Store/Acciones';
+
 
 const {
     Content,
   } = Layout;
 
 
-export class Detail extends Component {
-    state={
-        publicacion:{}
-    }
-
-    componentWillMount(){
-        this.get_publicacion()
-    }
-
-    get_publicacion=()=>{
-        //let{publicacion}=this.state
-        let slug_publicacion=this.props.match.params.slug_noticia
-        let publicaciones=this.props.noticias
-        let publicacion_detail=publicaciones.find(p => {
-            return p.slug === slug_publicacion;
-        })
-
-        this.setState({publicacion:publicacion_detail})
-
-        console.log(publicacion_detail)       
+class Detail extends Component {
+    componentDidMount(){
+        this.props.getSlug(this.props.match.params.slug_noticia);
+        this.props.getArticulo();
     }
 
     render() {
-        let{publicacion}=this.state
-        
+        console.log(this.props.detail.articulo)
         return (
             <Layout >
                 <Header />
-                <Nav />
+                <Nav/>
                 <Content >
-                    <DetailCard publicacion={publicacion} />
+                    <DetailCard  detail={this.props.detail.articulo ?this.props.detail.articulo:null}/>
                 </Content>
                 <Footer />
             </Layout>     
@@ -50,3 +34,21 @@ export class Detail extends Component {
         );
     }
 }
+const mapStateToProps = (state) => ({
+    detail: state.reducerArticulos,
+  })
+  
+  const mapDispatchToProps = (dispatch) => {
+    return {
+        getSlug: (slug) => {
+            dispatch(actionGetArticuloSlug(slug));
+          },
+        getArticulo: () => {
+            dispatch(actionGetArticuloDetail());
+          },
+    }
+  }
+  
+  export default connect(mapStateToProps, mapDispatchToProps)(Detail)
+  
+  

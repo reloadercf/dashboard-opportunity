@@ -2,11 +2,12 @@ import React from 'react'
 import {Row, Col, Layout} from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
-import { Nav } from '../components/homepage/nav/Nav';
+
 import Header from './components/header/Header';
 import Footer from '../components/homepage/footer/Footer';
 import consultoria from '../../assets/images/consultoria.svg'
 import './Consultoria.css'
+import Nav from '../components/homepage/nav/Nav';
 
 
 const {
@@ -17,7 +18,7 @@ export const Consultoria = ()=> {
   return (
       <Layout >
           <Header/>
-          <Nav />
+          <Nav/>
           <Content style={{height:"auto"}}>
               <Row type="flex" justify="center" align="middle">            
                   <Col lg={9} md={9} sm={10} xs={24} >

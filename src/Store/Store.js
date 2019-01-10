@@ -5,8 +5,12 @@ import funcionPrimaria from './Sagas/Sagas';
 
 const reducerArticulos = (state = {}, action) => {
   switch (action.type) {
-    case CONSTANTES.GetArticulosDestacados:
+    case CONSTANTES.AgregarArticulosDestacadosStore:
       return { ...state, articulosDestacados: action.articulos };
+    case CONSTANTES.GetArticuloSlug:
+      return { ...state, slug: action.slug };
+    case CONSTANTES.GetArticuloDetail:
+      return { ...state, articulo: action.articulo };
     default:
       return state;
   }

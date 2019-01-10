@@ -29,6 +29,7 @@ nav .logo img{
 .menu-icon{
   display: none
 }
+
 nav ul{
   margin: 0;
   padding: 0;
@@ -36,6 +37,16 @@ nav ul{
   justify-content: flex-end;
   transition: .5s;
 }
+
+.NavMenulg{
+  display: block;
+}
+
+
+.NavMenudoslg{
+  display: none;
+}
+
 
 nav.black{
   background: rgba(0, 0, 0, .1);
@@ -114,7 +125,7 @@ nav ul li a:hover{
     flex-direction: column;
     transition: .5s;
     width: 100%;
-    display: none;
+   
    
   }
   
@@ -147,6 +158,11 @@ nav ul li a:hover{
     color: #ffffff;
     background: #ff6f3c;
   }
+
+
+.NavMenulg{
+  display: none;
+}
   
   
   }
