@@ -22,7 +22,7 @@ nav .logo{
   float: left;
 }
 nav .logo img{
-  height: 80px;
+  height: 100px;
   transition: .5s;
 }
 
@@ -165,4 +165,15 @@ nav ul li a:hover{
 }
   
   
+  }
+.icono{
+  animation:pulse 3s ease infinite;
+  display: flex;
+  justify-content: flex-start;
+}
+
+  @keyframes pulse{
+    0%{transform: scale(1.6)}
+    50%{transform: scale(1.1)}
+    100%{transform: scale(1.6)}
   }

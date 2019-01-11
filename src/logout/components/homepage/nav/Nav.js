@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import './style.css'
 import {Link} from 'react-router-dom'
-import logo from '../../../../assets/images/logotipos/iconomx.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Fade from 'react-reveal/Fade'; 
+import { Icon,Popover } from 'antd';
+
+const content = (
+  <div>
+    <p>¿Tienes una idea? Haz Cilc</p>
+  </div>
+);
 
 class Nav extends Component {
   constructor(){
@@ -36,7 +42,9 @@ class Nav extends Component {
     return (
       <nav id="navBar" className="navBar">
       <div className="logo">
-        <img src={logo} alt="logo"/>
+      <Popover placement="bottomLeft" content={content} trigger="hover">
+      <Icon className='icono' type="bulb" style={{ fontSize: '25px'}}/>
+      </Popover>
         <span className="menu-icon" onClick={this.toggleMenu} ><FontAwesomeIcon icon={faBars} size="2x" style={{ color: "#fffff", marginRight:".5em" }} /></span>
       </div>
 
