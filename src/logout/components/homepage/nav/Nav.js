@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import './style.css'
 import {Link} from 'react-router-dom'
-import logo from '../../../../assets/images/logotipos/iconomx.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Fade from 'react-reveal/Fade'; 
+import { Icon,Popover } from 'antd';
+
+const content = (
+  <div>
+    <p>¿Tienes una idea? Haz Cilc</p>
+  </div>
+);
 
 class Nav extends Component {
   constructor(){
@@ -37,15 +43,15 @@ class Nav extends Component {
 
   render() {
     return (
-      <nav id="navBar" className="navBar">
+      <nav id="navBar" >
+      
       <div className="logo">
-      <Link to="/">
-          <img src={logo} alt="logo"/>
-      </Link>
-        
-        <span className="menu-icon" onClick={this.toggleMenu} ><FontAwesomeIcon icon={faBars} size="2x" style={{ color: "#fffff", marginRight:".5em" }} /></span>
+          <Popover placement="bottomLeft" content={content} trigger="hover">
+            <Icon className='icono' type="bulb" style={{ fontSize: '25px'}}/>
+          </Popover>
+          <span className="menu-icon" onClick={this.toggleMenu} ><FontAwesomeIcon icon={faBars} size="2x" style={{ color: "#fffff", marginRight:".5em" }} /></span>
       </div>
-
+  
       <div id="menuitems"  style={{display: !this.state.open ?"block":"none"}} >
       <Fade top cascade  >
       <ul>       

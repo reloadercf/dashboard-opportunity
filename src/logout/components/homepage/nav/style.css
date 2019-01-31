@@ -17,12 +17,14 @@ nav {
 
 nav .logo{
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   float: left;
+  height: 80px;
 }
 nav .logo img{
-  height: 80px;
+  height: 100px;
   transition: .5s;
 }
 
@@ -173,4 +175,15 @@ nav ul li a:hover{
 }
   
   
+  }
+.icono{
+  animation:pulse 3s ease infinite;
+  display: flex;
+  justify-content: flex-start;
+}
+
+  @keyframes pulse{
+    0%{transform: scale(1.6)}
+    50%{transform: scale(1.1)}
+    100%{transform: scale(1.6)}
   }
