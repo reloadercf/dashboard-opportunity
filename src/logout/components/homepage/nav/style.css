@@ -47,10 +47,14 @@ nav ul{
   display: none;
 }
 
+nav showMenuItems{
+  display: none;
+}
 
 nav.black{
   background: rgba(0, 0, 0, .1);
 }
+
 nav.black .logo img{
   height: 70px;
 }
@@ -136,6 +140,10 @@ nav ul li a:hover{
 
   nav.black{
     background: rgba(0, 0, 0, .1);
+  }
+
+  .showMenuItems{
+    display: none;
   }
   nav ul li{
     list-style: none;

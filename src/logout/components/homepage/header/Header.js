@@ -10,19 +10,26 @@ export default () => {
   return (
     
         <div className="cover">
-        <Zoom><img className="cover_cover_alineacion_mx" alt='Descarga' src={mxopportunity}/></Zoom>
+        <Zoom><img className="cover_cover_alineacion_mx" alt='Descarga' src={mxopportunity}/></Zoom>  
+          
+          <div className="cover_alineacion_titulo">
+            <h1 >
+               Moda y Tendencia de Oportunidades de Libre Comercio entre México y el Mundo
+           </h1>
+          </div>
+          
+
            <div className='cover_alineacion'>
             <div className="texto">
               Descarga la app
             </div>
             <div className="cover_cover_alineacion_apps">
              <Flip>
-             <img alt='Descarga' src={android}/>
+                <img alt='Descarga' src={android}/>
              </Flip>
-              <Flip>
-              <img alt='descarga' src={ios}/>
-              </Flip>
-              
+             <Flip>
+                <img alt='descarga' src={ios}/>
+             </Flip>
             </div>
           </div>
             

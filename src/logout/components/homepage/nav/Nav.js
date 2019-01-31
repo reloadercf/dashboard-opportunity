@@ -19,8 +19,11 @@ class Nav extends Component {
     function myFunction() {
       if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("navBar").className = "";
-      } else {
+      } 
+      
+      else {
         document.getElementById("navBar").className = "black";
+   
       }
     }
     
@@ -36,14 +39,17 @@ class Nav extends Component {
     return (
       <nav id="navBar" className="navBar">
       <div className="logo">
-        <img src={logo} alt="logo"/>
+      <Link to="/">
+          <img src={logo} alt="logo"/>
+      </Link>
+        
         <span className="menu-icon" onClick={this.toggleMenu} ><FontAwesomeIcon icon={faBars} size="2x" style={{ color: "#fffff", marginRight:".5em" }} /></span>
       </div>
 
-      <div  style={{display: !this.state.open ?"block":"none"}}>
+      <div id="menuitems"  style={{display: !this.state.open ?"block":"none"}} >
       <Fade top cascade  >
       <ul>       
-        <li> <Link to="/" replace>¿Quiero ser MXOpportunitty?</Link></li>
+        <li> <Link to="/"  replace>¿Quiero ser MXOpportunitty?</Link></li>
         <li> <Link to="/consultoria" replace>CONSULTORIA</Link></li>
         <li> <Link to="/capacitacion" replace>CAPACITACIÓN</Link></li>
       </ul>    
