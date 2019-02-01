@@ -35,7 +35,7 @@
 .HeaderCapacitacionTitulo span{
     letter-spacing: 5px;
     font-size: 18px;
-    font-weight: 200;
+    font-weight: 400;
 }
 .HeaderCapacitacionTitulo h1{
     color: #ffffff;
@@ -62,9 +62,10 @@
     border-radius: 10px;
     text-decoration: none;
     text-align: center;
-    width: 40%;
+    width: 60%;
     transition: .5s;
 }
+
 .HeaderCapacitacionTitulo a:hover
 {
     color: #ffffff;
@@ -97,185 +98,257 @@
     z-index: 0;
 }
 
-.ConsultoriaInfoUno{
-    height: 35vh;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.CapaContentUno{
+    padding: 5px;
 }
 
-
-
-.ConsultoriaInfoDos{
-   padding: 2em;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   height: 35vh;
+.item {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-
-.ConsultoriaInfoDos h3{
-    font-size: 30px;
-    letter-spacing:3px;
-    text-align: center;
- }
-
- .ConsultoriaInfoDos p{
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-align: justify;
-    line-height:1.5;
- }
-
-.dtl04 {
-    display: flex;
-    justify-content: center;
-    height: 35vh;
-    width: 100%;
-    position: relative;
-
-}
-.dtl04 img {
-    position: relative;
-    width: 80%;
-    top: 0;
-    left: 0;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-.dtl04 .dtl {
-    position: absolute;
-    background: #333;
-    width: 100%;
-    height: 100%;
-    top: 100%;
-    padding: 0 15px 0 15px;
-    left: 0;
-    opacity: 0;
-    z-index: 0;
-    overflow: auto;
-    visibility: hidden;
-    -webkit-transition: all 0.3s 0.15s;
-    -moz-transition: all 0.3s 0.15s;
-    -o-transition: all 0.3s 0.15s;
-    transition: all 0.3s 0.15s;
-}
-.dtl04 .dtl h3 {
-    color: #fff;
-    font-size: 30px;
-    font-weight: normal;
-    margin-top: 20px;
-    margin-bottom: 10px;
-   
-}
-.dtl04 .dtl p {
-    font-size: 14px;
-    margin-bottom: 10px;
-    line-height: 1.2;
-    color: #9d9c9c;
-    text-indent: 10px;
-    text-align: justify;
-}
-.dtl04 .dtl a {
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    color: #333;
-    float: right;
-    font-size: 13px;
-    padding: 2px 5px;
-    text-align: center;
-    text-decoration: none;
-}
-.dtl04 .dtl a:hover {
-    background: #e6e6e6;
-    border: 1px solid #adadad;
-}
-.dtl04:hover img {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-    opacity: 0;
-}
-.dtl04:hover .dtl {
-    top: 0;
-    opacity: 1;
-    visibility: visible;
-}
-.RowInfoConsultoriaInnovadora{
-    margin-top: 5em;
-}
-
-
-.dtl13 {
+.dtl21 {
     width: 100%;
     position: relative;
     -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
     box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+   
 }
-.dtl13 img {
+.dtl21 img {
     position: relative;
     width: 100%;
     top: 0;
     left: 0;
-}
-.dtl13 .dtl {
-    background: #333;
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    padding: 0 15px;
-    visibility: hidden;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-.dtl13 .dtl h3 {
-    color: #fff;
-    font-size: 16px;
-    font-weight: normal;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-decoration: underline;
+.dtl21 .dtl {
+    background: #d4d6d6;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    padding: 0 15px;
+    -webkit-transform: perspective(600px) rotateY(90deg);
+    -moz-transform: perspective(600px) rotateY(90deg);
+    -ms-transform: perspective(600px) rotateY(90deg);
+    -o-transform: perspective(600px) rotateY(90deg);
+    transform: perspective(600px) rotateY(90deg);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
-.dtl13 .dtl p {
-    font-size: 14px;
-    margin-bottom: 10px;
-    line-height: 1.2;
-    color: #9d9c9c;
-    text-indent: 10px;
+.dtl21 .dtl h3,
+.dtl21 .dtl p,
+.dtl21 .dtl .iconTrophy{
+    opacity: 0;
+    position: relative;
+    -webkit-transition: all 0.3s 0.3s;
+    -moz-transition: all 0.3s 0.3s;
+    -o-transition: all 0.3s 0.3s;
+    transition: all 0.3s 0.3s;
 }
-.dtl13 .dtl a {
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    color: #333;
-    float: right;
-    font-size: 13px;
-    padding: 2px 5px;
+.dtl21 .dtl h3 {
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
     text-align: center;
-    text-decoration: none;
+    letter-spacing: 2px;
+    
 }
-.dtl13 .dtl a:hover {
-    background: #e6e6e6;
-    border: 1px solid #adadad;
+.dtl21 .dtl p {
+    font-size: 16x;
+    margin-bottom: 20px;
+    line-height: 2;
+    color: #000000;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-align: justify;
 }
-.dtl13:hover .dtl {
-    visibility: visible;
+
+.dtl21:hover .dtl h3,
+.dtl21:hover .dtl p,
+.dtl21:hover .dtl a {
+    left: 0;
     opacity: 1;
-    left: 25px;
-    top: 25px;
 }
+.dtl21:hover .dtl {
+    visibility: visible;
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    -moz-transform: perspective(600px) rotateY(0deg);
+    -ms-transform: perspective(600px) rotateY(0deg);
+    -o-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+}
+
+
+
+
+
+@media only screen and (max-width: 1280px) and (min-width: 981px) 
+{  
+	
+    .HeaderCapacitacionTitulo{
+        left: 5%;
+        width: 60%;
+    }
+ 
+    .HeaderCapacitacionTitulo h1{
+        margin-bottom: 1em;
+    }
+    .HeaderCapacitacionTitulo p{
+        font-size: 24px;
+    }
+    
+    .HeaderCapacitacionTitulo a 
+    {
+        width: 60%;
+    }
+
+    
+    .Capacitacion .divRedesSociales{
+        flex-direction: row;
+        justify-content: space-around;
+        width:15%;
+    }
+    
+}
+
+@media only screen and (max-width: 980px) and (min-width: 699px) 
+{  
+	
+  
+    .HeaderCapacitacionTitulo{
+        left: 5%;
+        width: 60%;
+    }
+ 
+    .HeaderCapacitacionTitulo h1{
+        margin-bottom: 1em;
+    }
+  
+    
+    .HeaderCapacitacionTitulo a 
+    {
+        width: 60%;
+    }
+    
+    .Capacitacion .divRedesSociales{
+        flex-direction: row;
+        justify-content: space-around;
+        width:15%;
+    }
+    
+}  
+  
+
+  
+/* Para 600px */  
+@media only screen and (max-width: 700px) and (min-width: 501px) 
+{
+    .Capacitacion{
+        min-height: 100vh;
+        position: relative;
+        z-index: 0;
+    }
+
+    .HeaderCapacitacion{
+        height: 80vh; 
+        width: 100%;
+        
+    }
+
+    .HeaderCapacitacionDos{
+        height: 85vh; 
+        width: 100%;
+  
+    }
+
+	.HeaderCapacitacionTitulo{
+        left: 5%;
+        width: 80%;
+    }
+ 
+    .HeaderCapacitacionTitulo h1{
+        margin-bottom: .5em;
+    }
+    .HeaderCapacitacionTitulo p{
+        font-size: 20px;
+    }
+    
+    .HeaderCapacitacionTitulo a 
+    {
+        width: 60%;
+        font-size: 20px;
+    }
+
+    
+    .Capacitacion .divRedesSociales{
+        flex-direction: row;
+        justify-content: space-around;
+        width:20%;
+    }
+    
+}
+  
+  /* Para 480px */  
+  @media only screen and (max-width: 500px) and (min-width: 341px) 
+  {
+  
+    .Capacitacion{
+        min-height: 80vh;
+        position: relative;
+        z-index: 0;
+    }
+
+    .HeaderCapacitacion{
+        height: 65vh; 
+        width: 100%;
+        
+    }
+
+    .HeaderCapacitacionDos{
+        height: 70vh; 
+        width: 100%;
+  
+    }
+	.HeaderCapacitacionTitulo{
+        left: 5%;
+        width: 75%;
+    }
+ 
+    .HeaderCapacitacionTitulo h1{
+        margin-bottom: .5em;
+        font-size: 20px;
+    }
+    .HeaderCapacitacionTitulo p{
+        font-size: 16px;
+    }
+    
+    .HeaderCapacitacionTitulo a 
+    {
+        width: 60%;
+        font-size: 14px;
+    }
+
+    .Capacitacion .divRedesSociales{
+        flex-direction: row;
+        justify-content: space-around;
+        width:30%;
+    }
+  
+  }  
+    

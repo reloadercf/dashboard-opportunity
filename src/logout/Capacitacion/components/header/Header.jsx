@@ -17,7 +17,7 @@ export default () => {
         </div>
 
         <div className="divRedesSociales">
-          <FontAwesomeIcon icon={faFacebookSquare} size="3x" style={{ color: "#fffff", marginBottom: "0.5em" }} />
+          <FontAwesomeIcon icon={faFacebookSquare} size="3x" style={{ color: "#fffff" }} />
           <FontAwesomeIcon icon={faTwitterSquare} size="3x" style={{ color: "#fffff" }} />
         </div>
       </div>
