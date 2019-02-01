@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import registerServiceWorker from './registerServiceWorker';
 import 'antd/lib/date-picker/style/css'; 
 import 'antd/dist/antd.css'
 import ScrollMemory from 'react-router-scroll-memory';
@@ -21,8 +21,6 @@ ReactDOM.render(
     </div>
     </BrowserRouter>
  </Provider>
-
-   
 ,document.getElementById('root'));
 
-serviceWorker.unregister();
+registerServiceWorker();

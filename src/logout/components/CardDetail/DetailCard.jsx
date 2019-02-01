@@ -2,13 +2,20 @@ import React, {Component} from 'react';
 import {Row, Col , Layout} from 'antd'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faTwitterSquare, faFacebookSquare, faWhatsappSquare} from '@fortawesome/free-brands-svg-icons'
+import MetaTags from 'react-meta-tags';
+import {
+    FacebookShareButton,
+    TwitterShareButton,
+  } from 'react-share';
+
 const {
     Content,
   } = Layout;
+
+
+
+
 class DetailCard extends Component {
-
-
-
   actionCallPublicidadUno=(llamada) => {
     switch (llamada.llamada_accion_uno) {
       case 'Llamar':
@@ -55,11 +62,19 @@ class DetailCard extends Component {
     render() {
 
         let {detail} = this.props 
+        console.log(`https://mxopportunity-42d89.firebaseapp.com${this.props.location.pathname}`)
         return (
             <div>
                 {detail? 
                     <div>
                         <Content style={{ marginTop: 64 }}>
+                            <MetaTags>
+                                <title>{detail.titulo}</title>
+                                <meta name="description" content="Some description." />
+                                <meta property="og:title" content={detail.titulo} />
+                                <meta property="og:image" content={detail.imagen_destacada_uno} />
+
+                            </MetaTags>
                             <Row type="flex" justify="center" align="middle" >
                                 <Col lg={18} md={18} xs={22}>
                                     <Row>
@@ -81,25 +96,40 @@ class DetailCard extends Component {
                                                 <span>{detail.fecha_mostrada}</span>
                                             </div>
                                         </Col>
-                                        <Col md={6} sm={6} xs={8}>
+                                        <Col md={6} sm={6} xs={8}> 
                                             <div className="iconos_detail">
                                                 <ul >
                                                     <li>
-                                                        <FontAwesomeIcon
+
+                                                    <TwitterShareButton
+                                                            url={`https://mxopportunity-42d89.firebaseapp.com${this.props.location.pathname}`}
+                                                            quote={"reactnative"}
+                                                            
+                                                        >
+                                                           <FontAwesomeIcon
                                                             icon={faTwitterSquare}
                                                             size="2x"
                                                             style={{
                                                                 color: "#15b7b9"
                                                             }} />
+                                                        </TwitterShareButton>
+
                                                     </li>
                                                     <li>
-                                                        <FontAwesomeIcon
+                                                        <FacebookShareButton
+                                                            url={`https://mxopportunity-42d89.firebaseapp.com${this.props.location.pathname}`}
+                                                            quote={"reactnative"}
+                                                            
+                                                        >
+                                                          <FontAwesomeIcon
                                                             icon={faFacebookSquare}
                                                             size="2x"
                                                             style={{
                                                                 color: "#0245a3"
                                                             }} />
+                                                        </FacebookShareButton>
                                                     </li>
+                                              
                                                     <li >
                                                         <div className="ShowIcon">
                                                             <FontAwesomeIcon

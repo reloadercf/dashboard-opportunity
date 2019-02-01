@@ -13,7 +13,7 @@ export default () => {
           <span>-MxOpportunity</span>
           <h1>CAPACITACIÓN</h1>
           <p>La primera consultora en México en contar con una revista de aplicación móvil en el mercado que mueve moda y tendencias de oportunidad.</p>
-          <a href="https://www.google.com/"><FontAwesomeIcon icon="coffee" />¿Comó lo hacemos?</a>
+          <a href="https://www.google.com/">¿Comó lo hacemos?</a>
         </div>
 
         <div className="divRedesSociales">

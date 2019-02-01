@@ -20,13 +20,14 @@ class Detail extends Component {
     }
 
     render() {
-        console.log(this.props.detail.articulo)
+        console.log(this.props)
         return (
             <Layout >
                 <Header />
                 <Nav/>
                 <Content >
-                    <DetailCard  detail={this.props.detail.articulo ?this.props.detail.articulo:null}/>
+                   
+                    <DetailCard  {...this.props} detail={this.props.detail.articulo ?this.props.detail.articulo:null}/>
                 </Content>
                 <Footer />
             </Layout>     

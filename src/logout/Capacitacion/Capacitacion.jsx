@@ -59,7 +59,7 @@ export const Capacitacion = ()=> {
                       </Col>
                   </Row>
                   <Row type="flex" justify="center" align="middle" className="CapaContentDos">
-
+                            hgghgghg
                   </Row>
               </div>
 
