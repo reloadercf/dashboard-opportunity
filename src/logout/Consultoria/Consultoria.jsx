@@ -5,9 +5,9 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import Header from './components/header/Header';
 import Footer from '../components/homepage/footer/Footer';
 import consultoria from '../../assets/images/consultoria.png'
+import MetaTags from 'react-meta-tags';
 import './Consultoria.css'
 import Nav from '../components/homepage/nav/Nav';
-
 
 const {
     Content,
@@ -19,6 +19,17 @@ export const Consultoria = ()=> {
           <Header/>
           <Nav/>
           <Content style={{height:"auto"}}>
+              {/* <MetaTags>
+                  <title>Consultoria</title>
+                  <meta name="description" content="Consultoria especializada" />
+                  <meta property="og:title" content="Consultoria" />
+                  <meta property="og:description" content="Consultoria de forma especializada" />
+                  <meta property="og:url" content="https://mxopportunity.com/consultoria" />
+                  <meta property="og:image" content="https://images.pexels.com/photos/1261373/pexels-photo-1261373.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" />
+                  <meta property="og:image:width" content="150" />
+                  <meta property="og:image:height" content="50" />
+                  
+              </MetaTags> */}
               <Row type="flex" justify="center" align="middle">            
                   <Col lg={9} md={9} sm={10} xs={24} >
                       <div className="ConsultoriaInfoUno">

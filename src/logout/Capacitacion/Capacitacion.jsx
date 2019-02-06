@@ -6,6 +6,7 @@ import Nav from '../components/homepage/nav/Nav';
 import Header from './components/header/Header';
 import Footer from '../components/homepage/footer/Footer';
 import './Capacitacion.css'
+import MetaTags from 'react-meta-tags';
 
 
 const {
@@ -18,6 +19,14 @@ export const Capacitacion = ()=> {
           <Header />
           <Nav />
           <Content style={{ height: "auto" }}>
+               {/* <MetaTags>
+                  <title>Capactacion</title>
+                  <meta name="description" content="Capacitacion especializada" />
+                  <meta property="og:title" content="Capacitacion" />
+                  <meta property="og:description" content="Capacitacion de forma especializada" />
+                  <meta property="og:image" content="https://images.pexels.com/photos/1261373/pexels-photo-1261373.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" />
+                  <meta property="og:url" content="https://mxopportunity.com/capacitacion" />
+              </MetaTags> */}
               <div className="CapaContent">
                   <Row type="flex" justify="center" align="middle">
                       <Col lg={8} md={8} sm={24} xs={24}>

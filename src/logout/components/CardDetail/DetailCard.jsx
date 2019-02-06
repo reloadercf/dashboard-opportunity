@@ -6,6 +6,7 @@ import MetaTags from 'react-meta-tags';
 import {
     FacebookShareButton,
     TwitterShareButton,
+    WhatsappShareButton
   } from 'react-share';
 
 const {
@@ -62,7 +63,7 @@ class DetailCard extends Component {
     render() {
 
         let {detail} = this.props 
-        console.log(`https://mxopportunity-42d89.firebaseapp.com${this.props.location.pathname}`)
+       console.log(this.props)
         return (
             <div>
                 {detail? 
@@ -75,6 +76,7 @@ class DetailCard extends Component {
                                 <meta property="og:image" content={detail.imagen_destacada_uno} />
 
                             </MetaTags>
+                         
                             <Row type="flex" justify="center" align="middle" >
                                 <Col lg={18} md={18} xs={22}>
                                     <Row>
@@ -102,9 +104,8 @@ class DetailCard extends Component {
                                                     <li>
 
                                                     <TwitterShareButton
-                                                            url={`https://mxopportunity-42d89.firebaseapp.com${this.props.location.pathname}`}
-                                                            quote={"reactnative"}
-                                                            
+                                                            url={'https://mxopportunity.com'}
+                                                            quote={detail.titulo} 
                                                         >
                                                            <FontAwesomeIcon
                                                             icon={faTwitterSquare}
@@ -117,9 +118,8 @@ class DetailCard extends Component {
                                                     </li>
                                                     <li>
                                                         <FacebookShareButton
-                                                            url={`https://mxopportunity-42d89.firebaseapp.com${this.props.location.pathname}`}
-                                                            quote={"reactnative"}
-                                                            
+                                                            url={'https://mxopportunity.com'}
+                                                            quote={detail.titulo}                                                            
                                                         >
                                                           <FontAwesomeIcon
                                                             icon={faFacebookSquare}
@@ -132,12 +132,20 @@ class DetailCard extends Component {
                                               
                                                     <li >
                                                         <div className="ShowIcon">
+
+                                                        <WhatsappShareButton
+                                                            url={'https://mxopportunity.com'}
+                                                            quote={detail.titulo}      
+                                                        >
                                                             <FontAwesomeIcon
                                                                 icon={faWhatsappSquare}
                                                                 size="2x"
                                                                 style={{
                                                                     color: "#2eb872",
                                                                 }} />
+                                                        </WhatsappShareButton>
+
+                                                          
                                                         </div>
                                                     </li>
 

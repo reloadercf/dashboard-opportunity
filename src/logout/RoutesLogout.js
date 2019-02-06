@@ -12,14 +12,14 @@ class RoutesLogout extends Component {
    
     render() {
         return (
-            <Switch>
-                <Route exact path="/"  render={props =>(<Homepage {...props}  aumentar={this.props.aumentar} />)}/>
-                <Route exact path="/detail/:slug_noticia" render={props =>(<Detail {...props}  />)}/>    
-                <Route exact path="/entrar" render={props =>(<Login {...props} />)}/>
-                <Route exact path="/capacitacion" render={props =>(<Capacitacion  />)}/>
-                <Route exact path="/consultoria" render={props =>(<Consultoria  />)}/>
-                
-            </Switch>
+                <Switch>
+                    <Route exact path="/"  render={props =>(<Homepage {...props}  aumentar={this.props.aumentar} />)}/>
+                    <Route path="/detail/:slug_noticia" render={props =>(<Detail {...props}  />)}/>    
+                    <Route  path="/entrar" render={props =>(<Login {...props} />)}/>
+                    <Route  path="/capacitacion" render={props =>(<Capacitacion  />)}/>
+                    <Route  path="/consultoria" render={props =>(<Consultoria  />)}/>
+                </Switch>
+              
         );
     }
 
