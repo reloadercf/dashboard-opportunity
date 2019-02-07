@@ -1,10 +1,20 @@
 .cover{
-	background-image: url('../../../../assets/images/header/direccion.jpg');
+	background-image: url('../../../../assets/images/header/direccion2.jpg');
 	background-repeat: no-repeat;
 	min-height: 40rem;
 	background-position: center center;
 	background-size: cover;
 	position: relative;
+	
+}
+.cover_cover_alineacion_mx{
+	position: initial;
+	float: left;	
+	margin: 120px 0px 0px 10px;
+	top: 55%;
+	right: 25%;
+	width: 50%;
+	
 }
 .cover_alineacion{
 	width: 70%;
@@ -13,32 +23,37 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	top: 70%;
-	right: 0;
+	top: 55%;
+	right: 15%;
 }
 
 .cover_alineacion_titulo{
-	width: 70%;
-	position: absolute;
+	width: 80%;
+	position: initial;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	top: 40%;
 	right: 16%;
+	background-color: black;
+	margin: 10px;
 }
 
 
 .cover_alineacion_titulo h1{
-	color: #ffffff;
+	color: white;
 	text-align: center;
 	font-size: 28px;
 	font-weight: bold;
+	margin: 10px;
+	margin-top: 10px;
+
 }
 
 
 .texto{
-	color:#ffffff;
+	color:black;
 	font-size: 30px;	
 }
 
@@ -56,12 +71,7 @@
 	width: 30%;
 	height:auto;
 }
-.cover_cover_alineacion_mx{
-	position: absolute;
-	top: 15%;
-	right: 25%;
-	width: 50%;
-}
+
  
 @media only screen and (max-width: 980px) and (min-width: 821px) 
 {  
