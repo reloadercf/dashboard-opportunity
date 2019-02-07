@@ -55,9 +55,9 @@ class Nav extends Component {
       <div id="menuitems"  style={{display: !this.state.open ?"block":"none"}} >
       <Fade top cascade  >
       <ul>       
-        <li> <Link to="/"  replace>¿Quiero ser MXOpportunitty?</Link></li>
-        <li> <Link to="/consultoria" replace>CONSULTORIA</Link></li>
-        <li> <Link to="/capacitacion" replace>CAPACITACIÓN</Link></li>
+        
+        
+        <li> <Link to="/capacitacion" replace>Oportunidades</Link></li>
       </ul>    
       </Fade>
       </div>
