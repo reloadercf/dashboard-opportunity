@@ -68,3 +68,29 @@ entrar:last-of-type span {
     background-position: 500%;
   }
 }
+
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+
+
+  .animation{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #fff, #000, #fff);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 8s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  entrar{
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+  }
+
+}

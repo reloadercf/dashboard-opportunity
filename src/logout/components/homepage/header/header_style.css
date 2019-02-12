@@ -1,5 +1,4 @@
 .cover{
-	background-image: url('../../../../assets/images/header/direccion2.jpg');
 	background-repeat: no-repeat;
 	min-height: 40rem;
 	background-position: center center;
@@ -12,19 +11,27 @@
 	float: left;	
 	margin: 120px 0px 0px 10px;
 	top: 0%;
-	left: 0%;
+	left: 15%;
 	width: 50%;
 }
 
+.cover_cover_alineacion_cell{
+	position: absolute;	
+	top: 20%;
+	right: 0%;
+	width: 25%;
+}
+
+
 .cover_alineacion_titulo{
-	width: 80%;
+	width: 70%;
 	position: absolute;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	top: 35%;
-	right: 20%;
+	top: 40%;
+	right: 25%;
 	background-color: black;
 	margin: 10px;
 }
@@ -46,14 +53,16 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	top: 55%;
+	top: 70%;
 	right: 15%;
 }
 
 
 .texto{
 	color:black;
-	font-size: 30px;	
+	font-size: 25px;
+	text-decoration: none;
+	font-weight: 400;	
 }
 
 .cover_cover_alineacion_apps{
@@ -204,7 +213,7 @@
 @media only screen and (max-width: 620px) and (min-width: 501px) 
 {
 	.cover{
-		background-image: url('../../../../assets/images/header/header.jpg');
+	
 		background-repeat: no-repeat;
 		min-height: 25rem;
 		background-position: center center;
@@ -274,66 +283,71 @@
   {
   
     .cover{
-		background-image: url('../../../../assets/images/header/header.jpg');
+		width: 100%;
 		background-repeat: no-repeat;
-		min-height: 20rem;
+		min-height: 30rem;
 		background-position: center center;
 		background-size: cover;
 		position: relative;
 		
 	}
 	.cover_alineacion{
-		width: 70%;
+		width: 100%;
 		position: absolute;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		top: 75%;
-		right: 0;
+		top: 70%;
+		right: 0%;		
+
 	}
 
 	.cover_alineacion_titulo{
-		width: 70%;
+		width: 90%;
 		position: absolute;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		top: 45%;
-		right: 16%;
+		left: 0%;
+		background-color: rgb(26, 25, 25);
+		margin: 10px;
 	}
 
 	.cover_alineacion_titulo h1{
 		color: #ffffff;
 		text-align: center;
-		font-size: 14px;
+		font-size: 16px;
 		font-weight: bold;
 	}
 	.texto{
-		color:#ffffff;
-		font-size: 20px;	
+		color:#0c0c0c;
+		font-size: 14px;	
 	}
 	
 	.cover_cover_alineacion_apps{
-	 width: 100%;
-	 display: flex;
-	 flex-direction: row;
-	 justify-content: space-around;
-	 align-items: center;
+	width: 100%;
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-around;
+ 	align-items: center;
 	
 	}
 	
 	.cover_cover_alineacion_apps  img
 	{
-		width: 40%;
+		width: 45%;
 		height:auto;
 	}
 	.cover_cover_alineacion_mx{
 		position: absolute;
-		top: 25%;
-		right: 15%;
-		width: 70%;
+		top: 5%;
+		width: 90%;
+	}
+	.cover_cover_alineacion_cell{
+		display: none;
 	}
   
   

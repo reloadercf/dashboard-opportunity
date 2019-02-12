@@ -55,8 +55,6 @@ class Nav extends Component {
       <div id="menuitems"  style={{display: !this.state.open ?"block":"none"}} >
       <Fade top cascade  >
       <ul>       
-        
-        
         <li> <Link to="/capacitacion" replace>Oportunidades</Link></li>
       </ul>    
       </Fade>
