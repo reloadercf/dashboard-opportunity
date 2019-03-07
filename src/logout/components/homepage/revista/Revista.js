@@ -40,7 +40,7 @@ export const Revista= (props) => {
             <div className="ContentDivNaturaleza">
               <img alt='Naturaleza' src={mundoverde} />
             </div>  
-            <p>POR UN MUNDO CON MÁS ARBOLES Y MENOS PAPEL</p>   
+            <p>POR UN MUNDO CON MÁS ÁRBOLES Y MENOS PAPEL</p>   
       </div>
   </Content>
   )
