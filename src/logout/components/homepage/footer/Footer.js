@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout } from 'antd';
+import { Layout,Tag } from 'antd';
 import { Row, Col } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitterSquare, faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
@@ -39,9 +39,10 @@ export default () => {
         <Col xs={24} sm={12} md={6} lg={6} xl={6} >
           <div className="InfoFooterDos">
             <ul>
-              <li>Pachuca de Soto Hidalgo</li>
-              <li>771-568-55-89</li>
-
+              <li>Tel Contacto España:</li>
+              <li><Tag color="magenta">(+34) 617 36 3540</Tag></li>
+              <li>Tel Contacto Mexico</li>
+              <li><Tag color="geekblue">(+52) 771 568 5589</Tag></li>
             </ul>
           </div>
         </Col>

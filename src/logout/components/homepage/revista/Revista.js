@@ -3,7 +3,7 @@ import { Layout } from 'antd'
 import './style.css'
 import { Row, Col } from 'antd';
 import mapa from '../../../../assets/images/world-map.png'
-import mundoverde from '../../../../assets/images/naturaleza.jpg'
+import mundoverde from '../../../../assets/images/arbol.svg'
 import { ArticulosList } from '../articulos/ArticulosList';
 const {
     Content,
@@ -40,7 +40,7 @@ export const Revista= (props) => {
             <div className="ContentDivNaturaleza">
               <img alt='Naturaleza' src={mundoverde} />
             </div>  
-            <p>Por un mundo con menos papel y mas arboles</p>   
+            <p>POR UN MUNDO CON MÁS ARBOLES Y MENOS PAPEL</p>   
       </div>
   </Content>
   )
