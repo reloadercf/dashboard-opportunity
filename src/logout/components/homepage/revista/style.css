@@ -11,22 +11,57 @@
 }
 .ContentDivMapaDiv img
 {
-    width: 110%;
-   
+    width: 100%;
 }
+.divConviccion span
+{
+    text-align: center;
+}
+
+.divMundoVerde {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    position: relative;
+    
+
+}
+.ContentDivNaturaleza img
+{
+    width: 70%;
+}
+.divMundoVerde p
+{
+   position: absolute;
+   width: 60%;
+   top: 50%;
+   right: 10%;
+   background:linear-gradient(to right,#19F181,#036930);
+   z-index: 1;
+   color: #ffffff;
+   font-size: 30px;
+   font-weight: 400;
+   letter-spacing: 2px;
+   padding: 10px;
+   text-align: justify;
+}
+
 
 .ContentDivMapaDiv span
 {
     font-size: 40px;
     font-weight: bold;
+    text-align: center;
 
 }
 .ContentDivMapaDiv p
 {
     font-size: 30px;
     text-align: center;
-    font-weight: 200
-
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .ContentDivMapaDiv a 
@@ -61,21 +96,52 @@
         letter-spacing: 1px;
     }
     .ContentDivMapaDiv img
-    {
-        width: 120%;
-    }
+        {
+        width: 100%;
+   
+        }
+        .divMundoVerde {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 4em;
+            margin-bottom: 2em;
+            position: relative;
+        }
+        .ContentDivNaturaleza img
+        {
+            width: 100%;
+        }
+        .divMundoVerde p
+        {
+           position: absolute;
+           width: 100%;
+           top: 60%;
+           opacity: .8;
+           right: 0%;
+           background-color: #0b8457;
+           z-index: 1;
+           color: #ffffff;
+           font-size: 14px;
+           font-weight: 400;
+           letter-spacing: 2px;
+           padding: 10px;
+           text-align: justify;
+        }
+
     
     .ContentDivMapaDiv span
     {
         font-size: 25px;
         font-weight: bold;
+        text-align: center;
     
     }
     .ContentDivMapaDiv p
     {
-        font-size: 25px;
+        font-size: 18px;
         text-align: center;
-        font-weight: 200 
+        font-weight: 400 
     }
     
     .ContentDivMapaDiv a 

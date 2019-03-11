@@ -8,7 +8,7 @@ import { Icon,Popover } from 'antd';
 
 const content = (
   <div>
-    <p>¿Tienes una idea? Haz Cilc</p>
+    <p>¿Quieres tener tu propio Articulo?<a href='mailto:contacto@planb.com.mx?Subject=Quiero estar en la app MXOpportunity'>Haz Cilc</a></p>
   </div>
 );
 
@@ -55,8 +55,6 @@ class Nav extends Component {
       <div id="menuitems"  style={{display: !this.state.open ?"block":"none"}} >
       <Fade top cascade  >
       <ul>       
-        
-        
         <li> <Link to="/capacitacion" replace>Oportunidades</Link></li>
       </ul>    
       </Fade>

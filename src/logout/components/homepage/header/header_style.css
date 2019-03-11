@@ -1,10 +1,11 @@
 .cover{
-	background-image: url('../../../../assets/images/header/direccion2.jpg');
 	background-repeat: no-repeat;
-	min-height: 40rem;
+	min-height: 100vh;
 	background-position: center center;
 	background-size: cover;
 	position: relative;
+	background-color: #000000;
+	
 	
 }
 .cover_cover_alineacion_mx{
@@ -12,62 +13,68 @@
 	float: left;	
 	margin: 120px 0px 0px 10px;
 	top: 0%;
-	left: 0%;
-	width: 50%;
+	left: 10%;
+	width: 40%;
 }
 
+.cover_cover_alineacion_cell{
+	position: absolute;	
+	top: 7%;
+	right: 10%;
+	width: 25%;
+}
+
+
 .cover_alineacion_titulo{
-	width: 80%;
+	width: 50%;
 	position: absolute;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	top: 35%;
-	right: 20%;
-	background-color: black;
-	margin: 10px;
+	top: 40%;
+	left: 10%;
+	
 }
 
 
 .cover_alineacion_titulo h1{
 	color: white;
-	text-align: center;
-	font-size: 28px;
+	text-align: justify;
+	font-size: 25px;
 	font-weight: bold;
 	margin: 10px;
 	margin-top: 10px;
-
+	text-decoration: none;
 }
+
 .cover_alineacion{
-	width: 80%;
+	width: 60%;
 	position: absolute;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
-	top: 55%;
-	right: 15%;
+	top: 70%;
+	left: 10%;
 }
 
 
 .texto{
-	color:black;
-	font-size: 30px;	
+	color:rgb(255, 255, 255);
+	font-size: 24px;
+	text-decoration: none;
+	font-weight: 400;	
+	text-align: center;
 }
 
 .cover_cover_alineacion_apps{
- width: 80%;
+ width: 60%;
  display: flex;
  flex-direction: row;
  justify-content: space-around;
  align-items: center;
-
 }
 
 .cover_cover_alineacion_apps  img
 {
-	width: 30%;
+	width: 40%;
 	height:auto;
 }
 
@@ -204,7 +211,7 @@
 @media only screen and (max-width: 620px) and (min-width: 501px) 
 {
 	.cover{
-		background-image: url('../../../../assets/images/header/header.jpg');
+	
 		background-repeat: no-repeat;
 		min-height: 25rem;
 		background-position: center center;
@@ -272,68 +279,66 @@
   /* Para 480px */  
   @media only screen and (max-width: 500px) and (min-width: 341px) 
   {
-  
-    .cover{
-		background-image: url('../../../../assets/images/header/header.jpg');
-		background-repeat: no-repeat;
-		min-height: 20rem;
-		background-position: center center;
-		background-size: cover;
-		position: relative;
-		
-	}
+
 	.cover_alineacion{
-		width: 70%;
+		width: 100%;
 		position: absolute;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		top: 75%;
-		right: 0;
+		top: 70%;
+		left: 0%;		
+
 	}
 
 	.cover_alineacion_titulo{
-		width: 70%;
+		width: 90%;
 		position: absolute;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		top: 45%;
-		right: 16%;
+		top: 40%;
+		left: 0%;
+		margin: 10px;
 	}
 
 	.cover_alineacion_titulo h1{
 		color: #ffffff;
 		text-align: center;
-		font-size: 14px;
+		font-size: 18px;
 		font-weight: bold;
+		margin-bottom: 2em;
 	}
 	.texto{
-		color:#ffffff;
-		font-size: 20px;	
+		margin-top: 2em;
+		font-size: 18px;	
 	}
 	
 	.cover_cover_alineacion_apps{
-	 width: 100%;
-	 display: flex;
-	 flex-direction: row;
-	 justify-content: space-around;
-	 align-items: center;
+	width: 100%;
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-around;
+	align-items: center;
+	margin-top: 1em;
 	
 	}
 	
 	.cover_cover_alineacion_apps  img
 	{
-		width: 40%;
+		width: 45%;
 		height:auto;
 	}
 	.cover_cover_alineacion_mx{
 		position: absolute;
-		top: 25%;
-		right: 15%;
-		width: 70%;
+		top: 5%;
+		left: 0%;
+		width: 90%;
+	}
+	.cover_cover_alineacion_cell{
+		display: none;
 	}
   
   

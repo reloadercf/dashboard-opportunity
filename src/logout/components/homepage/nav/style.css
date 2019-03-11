@@ -24,7 +24,7 @@ nav .logo{
   height: 80px;
 }
 nav .logo img{
-  height: 100px;
+  height: 80px;
   transition: .5s;
 }
 
@@ -54,11 +54,11 @@ nav showMenuItems{
 }
 
 nav.black{
-  background: rgba(0, 0, 0, .1);
+  background: transparent;
 }
 
 nav.black .logo img{
-  height: 70px;
+  height: 80px;
 }
 
 nav.black nav ul{
@@ -186,4 +186,27 @@ nav ul li a:hover{
     0%{transform: scale(1.6)}
     50%{transform: scale(1.1)}
     100%{transform: scale(1.6)}
+  }
+
+  @media only screen and (max-width: 500px) and (min-width: 341px) 
+  {
+    nav{
+     height: auto;
+    }
+    nav .logo{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height:60px;
+    }
+    nav.black .logo img{
+      height: 60px;
+    }
+
+    nav .logo img{
+      height: 60px;
+      transition: .5s;
+    }
+    
   }
