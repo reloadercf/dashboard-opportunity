@@ -1,7 +1,6 @@
 import CONSTANTES from './Constantes';
 
 
-
 export const actionGetArticulosDestacados= () =>({
     type: CONSTANTES.GetArticulosDestacados,
 })

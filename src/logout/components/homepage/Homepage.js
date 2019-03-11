@@ -19,7 +19,7 @@ class Homepage extends Component {
   }
    componentDidMount(){
     this.props.getArticulosDestacados();
-   }
+   } 
  
   render() {
     console.log(this.props.destacados)

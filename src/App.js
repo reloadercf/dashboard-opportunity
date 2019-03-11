@@ -27,13 +27,10 @@ class App extends Component {
                <ScrollMemory/>
                <RoutesLogout  aumentar={this.props.aumentar} noticias={this.state.noticias}/>          
             </div>
-          
          </Router>
    </Provider>
      
     );
   }
 }
-
-
 export default App

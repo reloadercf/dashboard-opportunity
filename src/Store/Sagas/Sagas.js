@@ -2,11 +2,13 @@ import {
     takeEvery, call, select, put,
   } from 'redux-saga/effects';
   import CONSTANTES from '../Constantes';
+
   import {
    actionAgregarArticulosDestacadosStore, actionGetArticuloDetail,
   } from '../Acciones';
 
 
+  
   const ArticulosDestacados = () => fetch(`${CONSTANTES.URLAPI}/publicar/filtroespecialarticulo/?r=${CONSTANTES.EMPRESA}&portada=True`,
   {
     method: 'GET',

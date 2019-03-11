@@ -232,8 +232,6 @@ class DetailCard extends Component {
                                                     {this.actionCallPublicidadDos(detail)}
                                                 </div>
                                             </Col>
-
-                                   
                                         </Row>
                                         : null
                         
