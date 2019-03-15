@@ -1,30 +1,52 @@
 import React from 'react'
 import { Layout } from 'antd'
 import './style.css'
-import { Row, Col } from 'antd';
-import mapa from '../../../../assets/images/world-map.png'
+import Particles from 'react-particles-js';
 import mundoverde from '../../../../assets/images/arbol.svg'
 import { ArticulosList } from '../articulos/ArticulosList';
+import airplane from '../../../../assets/images/airplane.jpg'
 const {
     Content,
   } = Layout;
 
+
 export const Revista= (props) => {
   return (
-  <Content style={{ padding: '0 50px', marginTop: 64 }} >
+  <Content style={{ padding: '0 50px', marginTop: 100 }} >
     <div className="ContentDivMapa">
-      <Row gutter={16} type="flex" justify="center" align="middle" >
-        <Col xs={24} sm={12} md={11} lg={11} xl={11}>
-           <div className="ContentDivMapaDiv">
-            <img  alt='Mapa' src={mapa}/> 
-           </div>               
-        </Col>
-        <Col xs={24} sm={12} md={11} lg={11} xl={11} >
-            <div className="ContentDivMapaDiv"> 
-                <p> Nosotros difundimos, divulgamos, promovemos y conectamos oportunidades</p>
-            </div>
-        </Col>
-      </Row>
+      <div className='texto-content'>
+      <p> Nosotros difundimos, divulgamos, promovemos y conectamos oportunidades</p>
+      </div>
+            <Particles 
+              params={{
+            		particles: {
+            			line_linked: {
+                    distance:80,
+                    color: "#000000",
+                    size:10,
+            				shadow: {
+            					enable: false,
+                    }
+                  },
+                  color:{
+                    value: "#000000"
+                  },
+                  number: {
+                    value:50,
+                  },size: {
+                    value: 2,
+                  },
+            		}
+            	}}
+              style={{
+                width: "100%",
+	            	height: "100%",
+                backgroundImage: `url(${airplane})`,
+                backgroundPosition:'50% 50%',
+                backgroundSize:'cover',
+                backgroundAttachment: 'fixed',
+              }}
+            /> 
     </div>
     <div className="divConviccion">
         <p> -Nuestra Convicción-</p>

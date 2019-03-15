@@ -3,7 +3,7 @@ const CONSTANTES = {
     AgregarArticulosDestacadosStore:"AgregarArticulosDestacadosStore",
     GetArticuloSlug:"GetArticuloSlug",
     GetArticuloDetail:"GetArticuloDetail",
-    EMPRESA: 'MxOpportunity',
+    EMPRESA: 'MXOPPORTUNITY',
     URLAPI: 'https://apiplanb.xyz',
   };
   
