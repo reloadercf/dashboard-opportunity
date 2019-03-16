@@ -48,8 +48,7 @@ export const Consultoria = ()=> {
                   <Col lg={9} md={9} sm={10} xs={24} >
                       <div className="ConsultoriaInfoDos">
                           <p>
-                              MX Opportunity ayuda a la elaboración de proyectos de emprendimiento internacional
-                              para potenciar la participación de las empresas en actividades empresariales en mercados de oportunidad.
+                          Todos los días nos levantamos con la única obsesión de buscar experiencias positivas que inspiren a otras personas y que lleven la marca México.
                           </p>
                       </div>
                   </Col>      

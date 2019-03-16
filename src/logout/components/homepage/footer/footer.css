@@ -1,12 +1,16 @@
 
-
-
 .InfoFooterUno {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+ }
+ .InfoFooterUno a{
+    color:#ffffff;
+ }
+ .InfoFooterDos a{
+    color:#ffffff;
  }
  .InfoFooterUno div{
   margin-bottom: 10px;

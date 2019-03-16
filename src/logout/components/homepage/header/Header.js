@@ -4,7 +4,7 @@ import Flip from 'react-reveal/Flip';
 import android from '../../../../assets/images/header/google.png'
 import ios from '../../../../assets/images/header/apple.png'
 import mxopportunity from '../../../../assets/images/logotipos/mxopportunity.jpg'
-import celOpportunity from '../../../../assets/images/header/celularMXOpportunity.png'
+import celOpportunity from '../../../../assets/images/header/phone_opportunity.png'
 import './header_style.css'
 import './animate.css'
 

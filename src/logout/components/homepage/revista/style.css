@@ -1,8 +1,9 @@
 .ContentDivMapa{
-    margin-top: 10%;
+  margin-top: 10%;
   text-align: center;
   z-index: 0;
-  height: 100vh;
+  height: 100%;
+  color: #000000;
 }
 .texto-content p{
     z-index: 2;
@@ -11,7 +12,9 @@
         text-align: center;
         font-weight: 400;
         margin-bottom: 0;
-        font-size: 3rem;
+        font-size: 2rem;
+        justify-content: center;
+        font-size: #000000;
     }
 .header-video {
     position: relative;
@@ -38,7 +41,11 @@
 {
     text-align: center;
 }
-
+.divConviccion p
+{
+    
+    padding-top: 0;
+}
 .divMundoVerde {
     display: flex;
     flex-direction: row;

@@ -1,8 +1,8 @@
 import React from 'react'
 //import Zoom from 'react-reveal/Zoom';
 //import Flip from 'react-reveal/Flip';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitterSquare, faFacebookSquare} from '@fortawesome/free-brands-svg-icons'
+
+
 import '../../Capacitacion.css'
 
 export default () => {
@@ -10,16 +10,12 @@ export default () => {
     <div className="Capacitacion">
       <div className="HeaderCapacitacion">
         <div className="HeaderCapacitacionTitulo">
-          <span>-MxOpportunity</span>
-          <h1>CAPACITACIÓN</h1>
-          <p>La primera consultora en México en contar con una revista de aplicación móvil en el mercado que mueve moda y tendencias de oportunidad.</p>
-          <a href="https://www.google.com/">¿Comó lo hacemos?</a>
+          <span>MxOpportunity</span>
+          <h1>México and the World</h1>
+          <p>Todos los días nos levantamos con la única obsesión de buscar experiencias positivas que inspiren a otras personas y que lleven la marca México.</p>
+          <a href='mailto:contacto@planb.com.mx?Subject=Quiero estar en la app MXOpportunity'>Se parte de México en el Mundo</a>
         </div>
 
-        <div className="divRedesSociales">
-          <FontAwesomeIcon icon={faFacebookSquare} size="3x" style={{ color: "#fffff" }} />
-          <FontAwesomeIcon icon={faTwitterSquare} size="3x" style={{ color: "#fffff" }} />
-        </div>
       </div>
       <div className="HeaderCapacitacionDos" >
       </div>

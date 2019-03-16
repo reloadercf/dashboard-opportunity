@@ -2,9 +2,9 @@ import React from 'react'
 import { Layout } from 'antd'
 import './style.css'
 import Particles from 'react-particles-js';
-import mundoverde from '../../../../assets/images/arbol.svg'
+import mundoverde from '../../../../assets/images/mas_arboles.jpg'
 import { ArticulosList } from '../articulos/ArticulosList';
-import airplane from '../../../../assets/images/airplane.jpg'
+import airplane from '../../../../assets/images/career.jpg'
 const {
     Content,
   } = Layout;
@@ -12,10 +12,10 @@ const {
 
 export const Revista= (props) => {
   return (
-  <Content style={{ padding: '0 50px', marginTop: 100 }} >
+  <Content style={{marginTop: 150 }} >
     <div className="ContentDivMapa">
       <div className='texto-content'>
-      <p> Nosotros difundimos, divulgamos, promovemos y conectamos oportunidades</p>
+      <p> Somos el ecosistema digital que conecta tus oportunidades</p>
       </div>
             <Particles 
               params={{
@@ -32,7 +32,7 @@ export const Revista= (props) => {
                     value: "#000000"
                   },
                   number: {
-                    value:50,
+                    value:70,
                   },size: {
                     value: 2,
                   },
@@ -40,7 +40,7 @@ export const Revista= (props) => {
             	}}
               style={{
                 width: "100%",
-	            	height: "100%",
+	            	height: "auto",
                 backgroundImage: `url(${airplane})`,
                 backgroundPosition:'50% 50%',
                 backgroundSize:'cover',

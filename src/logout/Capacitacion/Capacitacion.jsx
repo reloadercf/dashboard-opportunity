@@ -1,10 +1,13 @@
 import React from 'react'
 import {Row, Col, Layout} from 'antd';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faTrophy} from '@fortawesome/free-solid-svg-icons'
+import { faTrophy,faCloudDownloadAlt, faGlobeAmericas} from '@fortawesome/free-solid-svg-icons'
 import Nav from '../components/homepage/nav/Nav';
 import Header from './components/header/Header';
 import Footer from '../components/homepage/footer/Footer';
+import mexin from '../../assets/images/cards_op/mexintheworld.jpg'
+import nature from '../../assets/images/cards_op/mexico_natural.jpeg'
+import estilo from '../../assets/images/cards_op/estilo.jpeg'
 import './Capacitacion.css'
 //import MetaTags from 'react-meta-tags';
 
@@ -32,11 +35,11 @@ export const Capacitacion = ()=> {
                       <Col lg={8} md={8} sm={24} xs={24}>
                           <div className="item">
                               <div className="dtl21">
-                                  <img src="https://images.pexels.com/photos/574285/pexels-photo-574285.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+                                  <img src={mexin} alt="" />
                                   <div className="dtl">
-                                      <FontAwesomeIcon icon={faTrophy} size="3x" style={{ color: "#fffff" }} />
-                                      <h3>Lorem Ipsum</h3>
-                                      <p>Integer sollicitudin lacus libero, in iaculis turpis tristique sit amet. Nullam augue elit, feugiat nec arcu eget, sodales feugiat ligula.</p>
+                                      <FontAwesomeIcon icon={faGlobeAmericas} size="3x" style={{ color: "#ffffff" }} />
+                                      <h3>México en el mundo</h3>
+                                      <p>Los que triunfan y sus experiencias. Conecta con las empresas mexicanas en el mundo.</p>
                                   </div>
                               </div>
                           </div>
@@ -44,11 +47,12 @@ export const Capacitacion = ()=> {
                       <Col lg={8} md={8} sm={24} xs={24} >
                           <div className="item">
                               <div className="dtl21">
-                                  <img src="https://images.pexels.com/photos/574285/pexels-photo-574285.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+                                  <img src={nature} alt="" />
                                   <div className="dtl">
-                                      <FontAwesomeIcon icon={faTrophy} size="3x" style={{ color: "#fffff" }} />
-                                      <h3>Lorem Ipsum</h3>
-                                      <p>Integer sollicitudin lacus libero, in iaculis turpis tristique sit amet. Nullam augue elit, feugiat nec arcu eget, sodales feugiat ligula.</p>
+                                      <FontAwesomeIcon icon={faTrophy} size="3x" style={{ color: "#ffffff" }} />
+                                      <h3>Why?</h3>
+                                      <p>Cuando quieras saber porque México es una oportunidad,
+tan sólo tendrás que hacer click...</p>
                                   </div>
                               </div>
                           </div>
@@ -57,18 +61,20 @@ export const Capacitacion = ()=> {
                       <Col lg={8} md={8} sm={24} xs={24} >
                           <div className="item">
                               <div className="dtl21">
-                                  <img src="https://images.pexels.com/photos/574285/pexels-photo-574285.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+                                  <img src={estilo} alt="" />
                                   <div className="dtl">
-                                      <FontAwesomeIcon icon={faTrophy} size="3x" style={{ color: "#fffff" }} />
-                                      <h3>Lorem Ipsum</h3>
-                                      <p>Integer sollicitudin lacus libero, in iaculis turpis tristique sit amet. Nullam augue elit, feugiat nec arcu eget, sodales feugiat ligula.</p>
+                                      <FontAwesomeIcon icon={faCloudDownloadAlt} size="3x" style={{ color: "#ffffff" }} />
+                                      <h3>Descarga MXOpportunity</h3>
+                                      <p>Si quieres que te encuentren sé nuestro patrocinador.
+Si quieres encontrar sé nuestro seguidor.</p>
                                   </div>
                               </div>
                           </div>
                       </Col>
                   </Row>
                   <Row type="flex" justify="center" align="middle" className="CapaContentDos">
-                            hgghgghg
+                  La única y primera App Móvil
+en tendencias de oportunidad entre México y el Mundo.
                   </Row>
               </div>
 

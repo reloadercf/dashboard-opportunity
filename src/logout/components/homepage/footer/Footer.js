@@ -1,8 +1,9 @@
 import React from 'react'
 import { Layout,Tag } from 'antd';
 import { Row, Col } from 'antd';
+import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitterSquare, faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
+import { faTwitterSquare, faFacebookSquare,faInstagram } from '@fortawesome/free-brands-svg-icons'
 import './footer.css'
 import mxopportunity from '../../../../assets/images/logotipos/mxopportunity.jpg'
 const { Footer } = Layout;
@@ -19,20 +20,21 @@ export default () => {
               <img alt='Descarga' src={mxopportunity} />
             </div>
             <div>
-              <p>contacto@planb.com.mx</p>
+              <p><a href='mailto:contacto@planb.com.mx?Subject=Quiero estar en la app MXOpportunity'>contacto@planb.com.mx</a></p>
             </div>
             <div className="footerSocial">
-              <FontAwesomeIcon icon={faFacebookSquare} size="3x" style={{ color: "#fffff" }} />
-              <FontAwesomeIcon icon={faTwitterSquare} size="3x" style={{ color: "#fffff" }} />
+            <a href='https://www.instagram.com/romano_rodriguez_fernandez/'><FontAwesomeIcon icon={faInstagram} size="3x" style={{ color: "#fffff" }} /></a>
+            <a href='https://www.facebook.com/planbinnovacion/'><FontAwesomeIcon icon={faFacebookSquare} size="3x" style={{ color: "#fffff" }} /></a>
+            <a href='https://twitter.com/incertidumbre_v/'><FontAwesomeIcon icon={faTwitterSquare} size="3x" style={{ color: "#fffff" }} /></a>
             </div>
           </div>
         </Col>
         <Col xs={24} sm={12} md={6} lg={6} xl={6} >
           <div className="InfoFooterDos">
             <ul>
-              <li>Oportunidades</li>
-              <li>Nosotros</li>
-              <li>Unete</li>
+              <li><Link to="/oportunidades" replace>Oportunidades</Link></li>
+              <li><Link to="/" replace>Nosotros</Link></li>
+              <li><a href='mailto:contacto@planb.com.mx?Subject=Quiero estar en la app MXOpportunity'>Unete</a></li>
             </ul>
           </div>
         </Col>
